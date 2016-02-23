@@ -18,4 +18,3 @@
 # limitations under the License.
 #
 include_recipe 'teamcity_server::server'
-include_recipe 'packer'
