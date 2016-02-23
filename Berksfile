@@ -3,5 +3,5 @@
 source 'https://supermarket.chef.io'
 
 metadata
-cookbook 'teamcity-cookbook'
+cookbook 'teamcity_server'
 cookbook 'packer'

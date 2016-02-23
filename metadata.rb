@@ -9,6 +9,6 @@ description      'Installs/Configures prime-8-buildserver'
 long_description 'Installs/Configures prime-8-buildserver'
 version          '0.0.1'
 
-depends 'teamcity-cookbook'
+depends 'teamcity_server'
 depends 'packer'
 
