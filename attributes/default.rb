@@ -1,1 +1,1 @@
-node["teamcity_server"]["version"] = "9.1.6"
+default["teamcity_server"]["version"] = "9.1.6"
