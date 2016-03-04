@@ -1,24 +1,34 @@
 DEPENDENCIES
-  packer
   prime-8-buildserver
     path: .
     metadata: true
+  sbp_packer
   teamcity_server
 
 GRAPH
+  7-zip (1.0.2)
+    windows (>= 1.2.2)
   apt (2.9.2)
-  ark (0.4.2)
+  ark (0.9.0)
+    7-zip (>= 0.0.0)
+    windows (>= 0.0.0)
   bluepill (2.4.2)
     rsyslog (>= 2.0)
+  chef_handler (1.3.0)
   compat_resource (12.7.3)
+  golang (1.5.1)
   java (1.39.0)
     apt (>= 0.0.0)
-  packer (0.3.0)
-    ark (~> 0.4.0)
   prime-8-buildserver (0.0.1)
+    sbp_packer (>= 0.0.0)
     teamcity_server (>= 0.0.0)
   rsyslog (4.0.0)
     compat_resource (>= 0.0.0)
+  sbp_packer (1.1.2)
+    ark (~> 0.9.0)
+    golang (~> 1.5.0)
   teamcity_server (0.0.0)
     bluepill (>= 0.0.0)
     java (>= 0.0.0)
+  windows (1.39.2)
+    chef_handler (>= 0.0.0)
