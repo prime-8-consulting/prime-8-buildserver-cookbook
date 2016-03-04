@@ -17,4 +17,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-include_recipe 'teamcity_server::server'
+include_recipe 'teamcity_server'
+include_recipe 'sbp_packer'

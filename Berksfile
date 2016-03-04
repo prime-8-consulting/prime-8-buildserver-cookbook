@@ -4,4 +4,4 @@ source 'https://supermarket.chef.io'
 
 metadata
 cookbook 'teamcity_server'
-cookbook 'packer'
+cookbook 'sbp_packer'
