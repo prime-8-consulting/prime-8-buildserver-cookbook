@@ -1,0 +1,40 @@
+---
+driver:
+  name: docker
+  use_sudo: false
+  socket: unix:///var/run/docker.sock
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: ubuntu-14.04
+ 
+suites:
+  - name: default
+    run_list:
+      - recipe[prime-8-buildserver::default]
+    attributes:
+
+  - name: ubu-docker
+    run_list:
+     - recipe[prime-8-buildserver::jenkins]
+    attributes:
+
+  - name: ubu-ec2
+    run_list: 
+      - recipe[prime-8-buildserver::jenkins]
+    driver:
+      name: ec2
+      region: us-west-2
+      aws_ssh_key_id: bootstrap
+      instance_type: t2.micro 
+      availability_zone: a
+      subnet_id: <%= ENV['SUBNET_ID'] %>
+      security_group_ids: [ <%= ENV['SECURITY_GROUP_ID'] %> ]
+      image_id: <%= ENV['AMI_ID'] %>
+      tags: 
+        Name: kitchen-prime-8-buildserver
+    transport:
+      ssh_key: <%= ENV['SSH_PRIVATE_KEY_FILE'] %> 
+      username: ubuntu

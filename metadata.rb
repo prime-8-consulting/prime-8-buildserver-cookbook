@@ -10,4 +10,6 @@ long_description 'Installs/Configures prime-8-buildserver'
 version          '0.0.1'
 
 depends 'teamcity_server'
+depends 'jenkins'
 depends 'sbp_packer'
+

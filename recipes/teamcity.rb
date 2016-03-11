@@ -17,5 +17,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+include_recipe 'teamcity_server::server'
+include_recipe 'teamcity_server::build_agent'
 include_recipe 'sbp_packer'
 
+cookbook_file '/etc/init.d/buildAgent' do
+  source 'buildAgent'
+  mode '0755'
+  action :create
+end
