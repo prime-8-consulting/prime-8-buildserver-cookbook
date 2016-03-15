@@ -1,80 +1,187 @@
-I, [2016-03-11T08:20:02.680574 #87165]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
-W, [2016-03-11T08:20:02.681102 #87165]  WARN -- default-ubuntu-1404: Running legacy converge for 'Docker' Driver
-I, [2016-03-11T08:20:02.681434 #87165]  INFO -- default-ubuntu-1404: Preparing files for transfer
-I, [2016-03-11T08:20:02.681530 #87165]  INFO -- default-ubuntu-1404: Preparing dna.json
-I, [2016-03-11T08:20:02.681854 #87165]  INFO -- default-ubuntu-1404: Resolving cookbook dependencies with Berkshelf 4.0.1...
-I, [2016-03-11T08:20:03.147416 #87165]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
-I, [2016-03-11T08:20:03.156091 #87165]  INFO -- default-ubuntu-1404: Preparing validation.pem
-I, [2016-03-11T08:20:03.156456 #87165]  INFO -- default-ubuntu-1404: Preparing client.rb
-I, [2016-03-11T08:20:03.238774 #87165]  INFO -- default-ubuntu-1404: -----> Chef Omnibus installation detected (install only if missing)
-I, [2016-03-11T08:20:03.324180 #87165]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
-I, [2016-03-11T08:20:18.176492 #87165]  INFO -- default-ubuntu-1404: Starting Chef Client, version 12.8.1
-I, [2016-03-11T08:20:19.195560 #87165]  INFO -- default-ubuntu-1404: resolving cookbooks for run list: ["prime-8-buildserver::default"]
-I, [2016-03-11T08:20:21.986158 #87165]  INFO -- default-ubuntu-1404: Synchronizing Cookbooks:
-I, [2016-03-11T08:20:21.998630 #87165]  INFO -- default-ubuntu-1404:   - prime-8-buildserver (0.0.1)
-I, [2016-03-11T08:20:22.006313 #87165]  INFO -- default-ubuntu-1404:   - teamcity_server (0.0.0)
-I, [2016-03-11T08:20:22.023876 #87165]  INFO -- default-ubuntu-1404:   - bluepill (2.4.2)
-I, [2016-03-11T08:20:22.027985 #87165]  INFO -- default-ubuntu-1404:   - jenkins (2.4.1)
-I, [2016-03-11T08:20:22.034238 #87165]  INFO -- default-ubuntu-1404:   - sbp_packer (1.1.2)
-I, [2016-03-11T08:20:22.046860 #87165]  INFO -- default-ubuntu-1404:   - java (1.39.0)
-I, [2016-03-11T08:20:22.065160 #87165]  INFO -- default-ubuntu-1404:   - apt (2.9.2)
-I, [2016-03-11T08:20:22.081477 #87165]  INFO -- default-ubuntu-1404:   - runit (1.7.6)
-I, [2016-03-11T08:20:22.097707 #87165]  INFO -- default-ubuntu-1404:   - ark (0.9.0)
-I, [2016-03-11T08:20:22.097983 #87165]  INFO -- default-ubuntu-1404:   - yum (3.10.0)
-I, [2016-03-11T08:20:22.105200 #87165]  INFO -- default-ubuntu-1404:   - golang (1.5.1)
-I, [2016-03-11T08:20:22.112349 #87165]  INFO -- default-ubuntu-1404:   - rsyslog (4.0.0)
-I, [2016-03-11T08:20:22.116247 #87165]  INFO -- default-ubuntu-1404:   - packagecloud (0.2.0)
-I, [2016-03-11T08:20:22.149007 #87165]  INFO -- default-ubuntu-1404:   - windows (1.39.2)
-I, [2016-03-11T08:20:22.154939 #87165]  INFO -- default-ubuntu-1404:   - 7-zip (1.0.2)
-I, [2016-03-11T08:20:22.187190 #87165]  INFO -- default-ubuntu-1404:   - compat_resource (12.7.3)
-I, [2016-03-11T08:20:22.188596 #87165]  INFO -- default-ubuntu-1404:   - chef_handler (1.3.0)
-I, [2016-03-11T08:20:22.190369 #87165]  INFO -- default-ubuntu-1404: Installing Cookbook Gems:
-I, [2016-03-11T08:20:22.190652 #87165]  INFO -- default-ubuntu-1404: Compiling Cookbooks...
-I, [2016-03-11T08:20:22.469558 #87165]  INFO -- default-ubuntu-1404: Converging 8 resources
-I, [2016-03-11T08:20:22.470195 #87165]  INFO -- default-ubuntu-1404: Recipe: ark::default
-I, [2016-03-11T08:21:18.757516 #87165]  INFO -- default-ubuntu-1404:   * apt_package[libtool] action install
-I, [2016-03-11T08:21:18.757787 #87165]  INFO -- default-ubuntu-1404:     - install version 2.4.2-1.7ubuntu1 of package libtool
-I, [2016-03-11T08:21:26.265065 #87165]  INFO -- default-ubuntu-1404:   * apt_package[autoconf] action install
-I, [2016-03-11T08:21:26.265237 #87165]  INFO -- default-ubuntu-1404:     - install version 2.69-6 of package autoconf
-I, [2016-03-11T08:21:32.403126 #87165]  INFO -- default-ubuntu-1404:   * apt_package[unzip] action install
-I, [2016-03-11T08:21:32.403283 #87165]  INFO -- default-ubuntu-1404:     - install version 6.0-9ubuntu1.5 of package unzip
-I, [2016-03-11T08:21:39.490992 #87165]  INFO -- default-ubuntu-1404:   * apt_package[rsync] action install
-I, [2016-03-11T08:21:39.491175 #87165]  INFO -- default-ubuntu-1404:     - install version 3.1.0-2ubuntu0.2 of package rsync
-I, [2016-03-11T08:21:45.082128 #87165]  INFO -- default-ubuntu-1404:   * apt_package[make] action install
-I, [2016-03-11T08:21:45.082300 #87165]  INFO -- default-ubuntu-1404:     - install version 3.81-8.2ubuntu3 of package make
-I, [2016-03-11T08:21:46.343523 #87165]  INFO -- default-ubuntu-1404:   * apt_package[gcc] action install (up to date)
-I, [2016-03-11T08:22:05.723906 #87165]  INFO -- default-ubuntu-1404:   * apt_package[autogen] action install
-I, [2016-03-11T08:22:05.724134 #87165]  INFO -- default-ubuntu-1404:     - install version 1:5.18-2ubuntu2 of package autogen
-I, [2016-03-11T08:22:05.724219 #87165]  INFO -- default-ubuntu-1404: Recipe: sbp_packer::install_binary
-I, [2016-03-11T08:22:05.729996 #87165]  INFO -- default-ubuntu-1404:   * ark[packer] action install
-I, [2016-03-11T08:22:05.731326 #87165]  INFO -- default-ubuntu-1404:     * directory[/usr/local/packer-0.8.6] action create
-I, [2016-03-11T08:22:05.732391 #87165]  INFO -- default-ubuntu-1404:       - create new directory /usr/local/packer-0.8.6
-I, [2016-03-11T08:24:05.985806 #87165]  INFO -- default-ubuntu-1404:     * remote_file[/tmp/kitchen/cache/packer-0.8.6.zip] action create
-I, [2016-03-11T08:24:06.635330 #87165]  INFO -- default-ubuntu-1404:       - create new file /tmp/kitchen/cache/packer-0.8.6.zip
-I, [2016-03-11T08:24:06.635416 #87165]  INFO -- default-ubuntu-1404:       - update content in file /tmp/kitchen/cache/packer-0.8.6.zip from none to 2f1ca7
-I, [2016-03-11T08:24:06.636267 #87165]  INFO -- default-ubuntu-1404:       (file sizes exceed 10000000 bytes, diff output suppressed)
-I, [2016-03-11T08:24:06.636909 #87165]  INFO -- default-ubuntu-1404:     * execute[unpack /tmp/kitchen/cache/packer-0.8.6.zip] action nothing (skipped due to action :nothing)
-I, [2016-03-11T08:24:06.637383 #87165]  INFO -- default-ubuntu-1404:     * execute[set owner on /usr/local/packer-0.8.6] action nothing (skipped due to action :nothing)
-I, [2016-03-11T08:24:06.638927 #87165]  INFO -- default-ubuntu-1404:     * link[/usr/local/bin/packer] action create
-I, [2016-03-11T08:24:06.639112 #87165]  INFO -- default-ubuntu-1404:       - create symlink at /usr/local/bin/packer to /usr/local/packer-0.8.6/packer
-I, [2016-03-11T08:24:06.640119 #87165]  INFO -- default-ubuntu-1404:     * link[/usr/local/packer] action create
-I, [2016-03-11T08:24:06.640537 #87165]  INFO -- default-ubuntu-1404:       - create symlink at /usr/local/packer to /usr/local/packer-0.8.6
-I, [2016-03-11T08:24:06.640770 #87165]  INFO -- default-ubuntu-1404:     * template[/etc/profile.d/packer.sh] action create (skipped due to only_if)
-I, [2016-03-11T08:24:06.641091 #87165]  INFO -- default-ubuntu-1404:     * ruby_block[adding '/usr/local/packer-0.8.6/bin' to chef-client ENV['PATH']] action run (skipped due to only_if)
-I, [2016-03-11T08:24:12.018574 #87165]  INFO -- default-ubuntu-1404:     * execute[unpack /tmp/kitchen/cache/packer-0.8.6.zip] action run
-I, [2016-03-11T08:24:12.019060 #87165]  INFO -- default-ubuntu-1404:       - execute unzip -q -u -o /tmp/kitchen/cache/packer-0.8.6.zip -d /usr/local/packer-0.8.6
-I, [2016-03-11T08:24:12.251511 #87165]  INFO -- default-ubuntu-1404:     * execute[set owner on /usr/local/packer-0.8.6] action run
-I, [2016-03-11T08:24:12.251740 #87165]  INFO -- default-ubuntu-1404:       - execute chown -R root:0 /usr/local/packer-0.8.6
-I, [2016-03-11T08:24:12.251820 #87165]  INFO -- default-ubuntu-1404:   
-I, [2016-03-11T08:24:12.533477 #87165]  INFO -- default-ubuntu-1404: 
-I, [2016-03-11T08:24:12.533614 #87165]  INFO -- default-ubuntu-1404: Running handlers:
-I, [2016-03-11T08:24:12.533868 #87165]  INFO -- default-ubuntu-1404: Running handlers complete
-I, [2016-03-11T08:24:12.534519 #87165]  INFO -- default-ubuntu-1404: 
-I, [2016-03-11T08:24:12.534569 #87165]  INFO -- default-ubuntu-1404: Deprecated features used!
-I, [2016-03-11T08:24:12.534584 #87165]  INFO -- default-ubuntu-1404:   The on_platforms option to node_map has been deprecated at 1 location:
-I, [2016-03-11T08:24:12.534864 #87165]  INFO -- default-ubuntu-1404:     - /tmp/kitchen/cache/cookbooks/jenkins/libraries/slave_windows.rb:29:in `<class:JenkinsWindowsSlave>'
-I, [2016-03-11T08:24:12.535051 #87165]  INFO -- default-ubuntu-1404:   Using an LWRP provider by its name (Ark) directly is no longer supported in Chef 12 and will be removed.  Use Chef::ProviderResolver.new(node, resource, action) instead. at 1 location:
-I, [2016-03-11T08:24:12.535248 #87165]  INFO -- default-ubuntu-1404:     - /tmp/kitchen/cache/cookbooks/ark/resources/default.rb:26:in `initialize'
-I, [2016-03-11T08:24:12.535273 #87165]  INFO -- default-ubuntu-1404: 
-I, [2016-03-11T08:24:12.535516 #87165]  INFO -- default-ubuntu-1404: Chef Client finished, 13/18 resources updated in 03 minutes 54 seconds
-I, [2016-03-11T08:24:14.608319 #87165]  INFO -- default-ubuntu-1404: Finished converging <default-ubuntu-1404> (4m11.93s).
+I, [2016-03-15T12:22:19.815975 #33508]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+W, [2016-03-15T12:22:19.816274 #33508]  WARN -- default-ubuntu-1404: Running legacy converge for 'Docker' Driver
+I, [2016-03-15T12:22:19.816482 #33508]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2016-03-15T12:22:19.816557 #33508]  INFO -- default-ubuntu-1404: Preparing dna.json
+I, [2016-03-15T12:22:19.816726 #33508]  INFO -- default-ubuntu-1404: Resolving cookbook dependencies with Berkshelf 4.0.1...
+I, [2016-03-15T12:22:20.194080 #33508]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2016-03-15T12:22:20.202400 #33508]  INFO -- default-ubuntu-1404: Preparing validation.pem
+I, [2016-03-15T12:22:20.202779 #33508]  INFO -- default-ubuntu-1404: Preparing client.rb
+I, [2016-03-15T12:22:20.275660 #33508]  INFO -- default-ubuntu-1404: -----> Chef Omnibus installation detected (install only if missing)
+I, [2016-03-15T12:22:20.312658 #33508]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
+I, [2016-03-15T12:22:34.821289 #33508]  INFO -- default-ubuntu-1404: Starting Chef Client, version 12.8.1
+I, [2016-03-15T12:22:35.806146 #33508]  INFO -- default-ubuntu-1404: resolving cookbooks for run list: ["prime-8-buildserver::default"]
+I, [2016-03-15T12:22:38.704329 #33508]  INFO -- default-ubuntu-1404: Synchronizing Cookbooks:
+I, [2016-03-15T12:22:38.718333 #33508]  INFO -- default-ubuntu-1404:   - prime-8-buildserver (0.0.1)
+I, [2016-03-15T12:22:38.724665 #33508]  INFO -- default-ubuntu-1404:   - teamcity_server (0.0.0)
+I, [2016-03-15T12:22:38.734856 #33508]  INFO -- default-ubuntu-1404:   - jenkins (2.4.1)
+I, [2016-03-15T12:22:38.736360 #33508]  INFO -- default-ubuntu-1404:   - bluepill (2.4.2)
+I, [2016-03-15T12:22:38.747442 #33508]  INFO -- default-ubuntu-1404:   - sbp_packer (1.1.2)
+I, [2016-03-15T12:22:38.754768 #33508]  INFO -- default-ubuntu-1404:   - java (1.39.0)
+I, [2016-03-15T12:22:38.771218 #33508]  INFO -- default-ubuntu-1404:   - apt (2.9.2)
+I, [2016-03-15T12:22:38.772807 #33508]  INFO -- default-ubuntu-1404:   - runit (1.7.6)
+I, [2016-03-15T12:22:38.848021 #33508]  INFO -- default-ubuntu-1404:   - ark (0.9.0)
+I, [2016-03-15T12:22:38.848371 #33508]  INFO -- default-ubuntu-1404:   - golang (1.5.1)
+I, [2016-03-15T12:22:38.848671 #33508]  INFO -- default-ubuntu-1404:   - rsyslog (4.0.0)
+I, [2016-03-15T12:22:38.848926 #33508]  INFO -- default-ubuntu-1404:   - packagecloud (0.2.0)
+I, [2016-03-15T12:22:38.849074 #33508]  INFO -- default-ubuntu-1404:   - 7-zip (1.0.2)
+I, [2016-03-15T12:22:38.849270 #33508]  INFO -- default-ubuntu-1404:   - windows (1.39.2)
+I, [2016-03-15T12:22:38.849448 #33508]  INFO -- default-ubuntu-1404:   - yum (3.10.0)
+I, [2016-03-15T12:22:38.849648 #33508]  INFO -- default-ubuntu-1404:   - chef_handler (1.3.0)
+I, [2016-03-15T12:22:38.849867 #33508]  INFO -- default-ubuntu-1404:   - compat_resource (12.7.3)
+I, [2016-03-15T12:22:38.850024 #33508]  INFO -- default-ubuntu-1404: Installing Cookbook Gems:
+I, [2016-03-15T12:22:38.850180 #33508]  INFO -- default-ubuntu-1404: Compiling Cookbooks...
+I, [2016-03-15T12:22:39.101437 #33508]  INFO -- default-ubuntu-1404: Converging 8 resources
+I, [2016-03-15T12:22:39.101728 #33508]  INFO -- default-ubuntu-1404: Recipe: ark::default
+I, [2016-03-15T12:22:48.062067 #33508]  INFO -- default-ubuntu-1404:   * apt_package[libtool] action install
+I, [2016-03-15T12:22:48.062621 #33508]  INFO -- default-ubuntu-1404:     
+I, [2016-03-15T12:22:48.063182 #33508]  INFO -- default-ubuntu-1404:     ================================================================================
+I, [2016-03-15T12:22:48.063739 #33508]  INFO -- default-ubuntu-1404:     Error executing action `install` on resource 'apt_package[libtool]'
+I, [2016-03-15T12:22:48.064274 #33508]  INFO -- default-ubuntu-1404:     ================================================================================
+I, [2016-03-15T12:22:48.064698 #33508]  INFO -- default-ubuntu-1404:     
+I, [2016-03-15T12:22:48.065267 #33508]  INFO -- default-ubuntu-1404:     Mixlib::ShellOut::ShellCommandFailed
+I, [2016-03-15T12:22:48.065886 #33508]  INFO -- default-ubuntu-1404:     ------------------------------------
+I, [2016-03-15T12:22:48.066507 #33508]  INFO -- default-ubuntu-1404:     Expected process to exit with [0], but received '100'
+I, [2016-03-15T12:22:48.067032 #33508]  INFO -- default-ubuntu-1404:     ---- Begin output of apt-get -q -y install libtool=2.4.2-1.7ubuntu1 ----
+I, [2016-03-15T12:22:48.067640 #33508]  INFO -- default-ubuntu-1404:     STDOUT: Reading package lists...
+I, [2016-03-15T12:22:48.068315 #33508]  INFO -- default-ubuntu-1404:     Building dependency tree...
+I, [2016-03-15T12:22:48.068829 #33508]  INFO -- default-ubuntu-1404:     Reading state information...
+I, [2016-03-15T12:22:48.069354 #33508]  INFO -- default-ubuntu-1404:     The following extra packages will be installed:
+I, [2016-03-15T12:22:48.069931 #33508]  INFO -- default-ubuntu-1404:       autotools-dev binutils cpp cpp-4.8 gcc gcc-4.8 gcc-4.8-base libasan0
+I, [2016-03-15T12:22:48.070568 #33508]  INFO -- default-ubuntu-1404:       libatomic1 libc-dev-bin libc6-dev libcloog-isl4 libgcc-4.8-dev libgmp10
+I, [2016-03-15T12:22:48.071746 #33508]  INFO -- default-ubuntu-1404:       libgomp1 libisl10 libitm1 libltdl-dev libltdl7 libmpc3 libmpfr4 libquadmath0
+I, [2016-03-15T12:22:48.071790 #33508]  INFO -- default-ubuntu-1404:       libstdc++6 libtsan0 linux-libc-dev manpages manpages-dev
+I, [2016-03-15T12:22:48.071827 #33508]  INFO -- default-ubuntu-1404:     Suggested packages:
+I, [2016-03-15T12:22:48.072413 #33508]  INFO -- default-ubuntu-1404:       binutils-doc cpp-doc gcc-4.8-locales gcc-multilib make autoconf automake1.9
+I, [2016-03-15T12:22:48.072549 #33508]  INFO -- default-ubuntu-1404:       flex bison gdb gcc-doc gcc-4.8-multilib gcc-4.8-doc libgcc1-dbg libgomp1-dbg
+I, [2016-03-15T12:22:48.072677 #33508]  INFO -- default-ubuntu-1404:       libitm1-dbg libatomic1-dbg libasan0-dbg libtsan0-dbg libquadmath0-dbg
+I, [2016-03-15T12:22:48.074212 #33508]  INFO -- default-ubuntu-1404:       glibc-doc libtool-doc automaken gfortran fortran95-compiler gcj-jdk
+I, [2016-03-15T12:22:48.074255 #33508]  INFO -- default-ubuntu-1404:       man-browser
+I, [2016-03-15T12:22:48.074272 #33508]  INFO -- default-ubuntu-1404:     The following NEW packages will be installed:
+I, [2016-03-15T12:22:48.074285 #33508]  INFO -- default-ubuntu-1404:       autotools-dev binutils cpp cpp-4.8 gcc gcc-4.8 libasan0 libatomic1
+I, [2016-03-15T12:22:48.074323 #33508]  INFO -- default-ubuntu-1404:       libc-dev-bin libc6-dev libcloog-isl4 libgcc-4.8-dev libgmp10 libgomp1
+I, [2016-03-15T12:22:48.089668 #33508]  INFO -- default-ubuntu-1404:       libisl10 libitm1 libltdl-dev libltdl7 libmpc3 libmpfr4 libquadmath0 libtool
+I, [2016-03-15T12:22:48.089731 #33508]  INFO -- default-ubuntu-1404:       libtsan0 linux-libc-dev manpages manpages-dev
+I, [2016-03-15T12:22:48.089750 #33508]  INFO -- default-ubuntu-1404:     The following packages will be upgraded:
+I, [2016-03-15T12:22:48.089781 #33508]  INFO -- default-ubuntu-1404:       gcc-4.8-base libstdc++6
+I, [2016-03-15T12:22:48.089802 #33508]  INFO -- default-ubuntu-1404:     2 upgraded, 26 newly installed, 0 to remove and 11 not upgraded.
+I, [2016-03-15T12:22:48.089816 #33508]  INFO -- default-ubuntu-1404:     Need to get 2755 kB/20.6 MB of archives.
+I, [2016-03-15T12:22:48.089828 #33508]  INFO -- default-ubuntu-1404:     After this operation, 74.5 MB of additional disk space will be used.
+I, [2016-03-15T12:22:48.089841 #33508]  INFO -- default-ubuntu-1404:     Err http://archive.ubuntu.com/ubuntu/ trusty-security/main libc-dev-bin amd64 2.19-0ubuntu6.6
+I, [2016-03-15T12:22:48.089855 #33508]  INFO -- default-ubuntu-1404:       404  Not Found [IP: 91.189.91.13 80]
+I, [2016-03-15T12:22:48.089867 #33508]  INFO -- default-ubuntu-1404:     Err http://archive.ubuntu.com/ubuntu/ trusty-security/main linux-libc-dev amd64 3.13.0-77.121
+I, [2016-03-15T12:22:48.089888 #33508]  INFO -- default-ubuntu-1404:       404  Not Found [IP: 91.189.91.13 80]
+I, [2016-03-15T12:22:48.089902 #33508]  INFO -- default-ubuntu-1404:     Err http://archive.ubuntu.com/ubuntu/ trusty-security/main libc6-dev amd64 2.19-0ubuntu6.6
+I, [2016-03-15T12:22:48.089923 #33508]  INFO -- default-ubuntu-1404:       404  Not Found [IP: 91.189.91.13 80]
+I, [2016-03-15T12:22:48.089936 #33508]  INFO -- default-ubuntu-1404:     STDERR: E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/libc-dev-bin_2.19-0ubuntu6.6_amd64.deb  404  Not Found [IP: 91.189.91.13 80]
+I, [2016-03-15T12:22:48.089949 #33508]  INFO -- default-ubuntu-1404:     
+I, [2016-03-15T12:22:48.089982 #33508]  INFO -- default-ubuntu-1404:     E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux-libc-dev_3.13.0-77.121_amd64.deb  404  Not Found [IP: 91.189.91.13 80]
+I, [2016-03-15T12:22:48.090044 #33508]  INFO -- default-ubuntu-1404:     
+I, [2016-03-15T12:22:48.090067 #33508]  INFO -- default-ubuntu-1404:     E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/libc6-dev_2.19-0ubuntu6.6_amd64.deb  404  Not Found [IP: 91.189.91.13 80]
+I, [2016-03-15T12:22:48.090080 #33508]  INFO -- default-ubuntu-1404:     
+I, [2016-03-15T12:22:48.090092 #33508]  INFO -- default-ubuntu-1404:     E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+I, [2016-03-15T12:22:48.090120 #33508]  INFO -- default-ubuntu-1404:     ---- End output of apt-get -q -y install libtool=2.4.2-1.7ubuntu1 ----
+I, [2016-03-15T12:22:48.090134 #33508]  INFO -- default-ubuntu-1404:     Ran apt-get -q -y install libtool=2.4.2-1.7ubuntu1 returned 100
+I, [2016-03-15T12:22:48.090160 #33508]  INFO -- default-ubuntu-1404:     
+I, [2016-03-15T12:22:48.090173 #33508]  INFO -- default-ubuntu-1404:     Resource Declaration:
+I, [2016-03-15T12:22:48.090184 #33508]  INFO -- default-ubuntu-1404:     ---------------------
+I, [2016-03-15T12:22:48.090196 #33508]  INFO -- default-ubuntu-1404:     # In /tmp/kitchen/cache/cookbooks/ark/recipes/default.rb
+I, [2016-03-15T12:22:48.090208 #33508]  INFO -- default-ubuntu-1404:     
+I, [2016-03-15T12:22:48.090221 #33508]  INFO -- default-ubuntu-1404:      22:   package pkg
+I, [2016-03-15T12:22:48.090244 #33508]  INFO -- default-ubuntu-1404:      23: end
+I, [2016-03-15T12:22:48.090256 #33508]  INFO -- default-ubuntu-1404:     
+I, [2016-03-15T12:22:48.090267 #33508]  INFO -- default-ubuntu-1404:     Compiled Resource:
+I, [2016-03-15T12:22:48.090279 #33508]  INFO -- default-ubuntu-1404:     ------------------
+I, [2016-03-15T12:22:48.090290 #33508]  INFO -- default-ubuntu-1404:     # Declared in /tmp/kitchen/cache/cookbooks/ark/recipes/default.rb:22:in `block in from_file'
+I, [2016-03-15T12:22:48.090302 #33508]  INFO -- default-ubuntu-1404:     
+I, [2016-03-15T12:22:48.090329 #33508]  INFO -- default-ubuntu-1404:     apt_package("libtool") do
+I, [2016-03-15T12:22:48.090342 #33508]  INFO -- default-ubuntu-1404:       package_name "libtool"
+I, [2016-03-15T12:22:48.090353 #33508]  INFO -- default-ubuntu-1404:       action [:install]
+I, [2016-03-15T12:22:48.090365 #33508]  INFO -- default-ubuntu-1404:       retries 0
+I, [2016-03-15T12:22:48.090376 #33508]  INFO -- default-ubuntu-1404:       retry_delay 2
+I, [2016-03-15T12:22:48.090388 #33508]  INFO -- default-ubuntu-1404:       default_guard_interpreter :default
+I, [2016-03-15T12:22:48.090399 #33508]  INFO -- default-ubuntu-1404:       declared_type :package
+I, [2016-03-15T12:22:48.090411 #33508]  INFO -- default-ubuntu-1404:       cookbook_name "ark"
+I, [2016-03-15T12:22:48.090442 #33508]  INFO -- default-ubuntu-1404:       recipe_name "default"
+I, [2016-03-15T12:22:48.090454 #33508]  INFO -- default-ubuntu-1404:     end
+I, [2016-03-15T12:22:48.090465 #33508]  INFO -- default-ubuntu-1404:     
+I, [2016-03-15T12:22:48.090476 #33508]  INFO -- default-ubuntu-1404: 
+I, [2016-03-15T12:22:48.090488 #33508]  INFO -- default-ubuntu-1404: Running handlers:
+I, [2016-03-15T12:22:48.090554 #33508]  INFO -- default-ubuntu-1404: [2016-03-15T19:22:48+00:00] ERROR: Running exception handlers
+I, [2016-03-15T12:22:48.090570 #33508]  INFO -- default-ubuntu-1404: Running handlers complete
+I, [2016-03-15T12:22:48.090582 #33508]  INFO -- default-ubuntu-1404: [2016-03-15T19:22:48+00:00] ERROR: Exception handlers complete
+I, [2016-03-15T12:22:48.090598 #33508]  INFO -- default-ubuntu-1404: Chef Client failed. 0 resources updated in 13 seconds
+I, [2016-03-15T12:22:48.090612 #33508]  INFO -- default-ubuntu-1404: [2016-03-15T19:22:48+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2016-03-15T12:22:48.090642 #33508]  INFO -- default-ubuntu-1404: [2016-03-15T19:22:48+00:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+I, [2016-03-15T12:22:48.090655 #33508]  INFO -- default-ubuntu-1404: [2016-03-15T19:22:48+00:00] ERROR: apt_package[libtool] (ark::default line 22) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0], but received '100'
+I, [2016-03-15T12:22:48.090667 #33508]  INFO -- default-ubuntu-1404: ---- Begin output of apt-get -q -y install libtool=2.4.2-1.7ubuntu1 ----
+I, [2016-03-15T12:22:48.090679 #33508]  INFO -- default-ubuntu-1404: STDOUT: Reading package lists...
+I, [2016-03-15T12:22:48.090690 #33508]  INFO -- default-ubuntu-1404: Building dependency tree...
+I, [2016-03-15T12:22:48.090701 #33508]  INFO -- default-ubuntu-1404: Reading state information...
+I, [2016-03-15T12:22:48.090713 #33508]  INFO -- default-ubuntu-1404: The following extra packages will be installed:
+I, [2016-03-15T12:22:48.090724 #33508]  INFO -- default-ubuntu-1404:   autotools-dev binutils cpp cpp-4.8 gcc gcc-4.8 gcc-4.8-base libasan0
+I, [2016-03-15T12:22:48.090752 #33508]  INFO -- default-ubuntu-1404:   libatomic1 libc-dev-bin libc6-dev libcloog-isl4 libgcc-4.8-dev libgmp10
+I, [2016-03-15T12:22:48.090765 #33508]  INFO -- default-ubuntu-1404:   libgomp1 libisl10 libitm1 libltdl-dev libltdl7 libmpc3 libmpfr4 libquadmath0
+I, [2016-03-15T12:22:48.090777 #33508]  INFO -- default-ubuntu-1404:   libstdc++6 libtsan0 linux-libc-dev manpages manpages-dev
+I, [2016-03-15T12:22:48.090789 #33508]  INFO -- default-ubuntu-1404: Suggested packages:
+I, [2016-03-15T12:22:48.090800 #33508]  INFO -- default-ubuntu-1404:   binutils-doc cpp-doc gcc-4.8-locales gcc-multilib make autoconf automake1.9
+I, [2016-03-15T12:22:48.090812 #33508]  INFO -- default-ubuntu-1404:   flex bison gdb gcc-doc gcc-4.8-multilib gcc-4.8-doc libgcc1-dbg libgomp1-dbg
+I, [2016-03-15T12:22:48.090823 #33508]  INFO -- default-ubuntu-1404:   libitm1-dbg libatomic1-dbg libasan0-dbg libtsan0-dbg libquadmath0-dbg
+I, [2016-03-15T12:22:48.090835 #33508]  INFO -- default-ubuntu-1404:   glibc-doc libtool-doc automaken gfortran fortran95-compiler gcj-jdk
+I, [2016-03-15T12:22:48.090846 #33508]  INFO -- default-ubuntu-1404:   man-browser
+I, [2016-03-15T12:22:48.090869 #33508]  INFO -- default-ubuntu-1404: The following NEW packages will be installed:
+I, [2016-03-15T12:22:48.090881 #33508]  INFO -- default-ubuntu-1404:   autotools-dev binutils cpp cpp-4.8 gcc gcc-4.8 libasan0 libatomic1
+I, [2016-03-15T12:22:48.090893 #33508]  INFO -- default-ubuntu-1404:   libc-dev-bin libc6-dev libcloog-isl4 libgcc-4.8-dev libgmp10 libgomp1
+I, [2016-03-15T12:22:48.090904 #33508]  INFO -- default-ubuntu-1404:   libisl10 libitm1 libltdl-dev libltdl7 libmpc3 libmpfr4 libquadmath0 libtool
+I, [2016-03-15T12:22:48.090916 #33508]  INFO -- default-ubuntu-1404:   libtsan0 linux-libc-dev manpages manpages-dev
+I, [2016-03-15T12:22:48.090927 #33508]  INFO -- default-ubuntu-1404: The following packages will be upgraded:
+I, [2016-03-15T12:22:48.090938 #33508]  INFO -- default-ubuntu-1404:   gcc-4.8-base libstdc++6
+I, [2016-03-15T12:22:48.090967 #33508]  INFO -- default-ubuntu-1404: 2 upgraded, 26 newly installed, 0 to remove and 11 not upgraded.
+I, [2016-03-15T12:22:48.090978 #33508]  INFO -- default-ubuntu-1404: Need to get 2755 kB/20.6 MB of archives.
+I, [2016-03-15T12:22:48.091011 #33508]  INFO -- default-ubuntu-1404: After this operation, 74.5 MB of additional disk space will be used.
+I, [2016-03-15T12:22:48.093184 #33508]  INFO -- default-ubuntu-1404: Err http://archive.ubuntu.com/ubuntu/ trusty-security/main libc-dev-bin amd64 2.19-0ubuntu6.6
+I, [2016-03-15T12:22:48.093249 #33508]  INFO -- default-ubuntu-1404:   404  Not Found [IP: 91.189.91.13 80]
+I, [2016-03-15T12:22:48.093266 #33508]  INFO -- default-ubuntu-1404: Err http://archive.ubuntu.com/ubuntu/ trusty-security/main linux-libc-dev amd64 3.13.0-77.121
+I, [2016-03-15T12:22:48.093304 #33508]  INFO -- default-ubuntu-1404:   404  Not Found [IP: 91.189.91.13 80]
+I, [2016-03-15T12:22:48.093317 #33508]  INFO -- default-ubuntu-1404: Err http://archive.ubuntu.com/ubuntu/ trusty-security/main libc6-dev amd64 2.19-0ubuntu6.6
+I, [2016-03-15T12:22:48.093330 #33508]  INFO -- default-ubuntu-1404:   404  Not Found [IP: 91.189.91.13 80]
+I, [2016-03-15T12:22:48.093341 #33508]  INFO -- default-ubuntu-1404: STDERR: E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/libc-dev-bin_2.19-0ubuntu6.6_amd64.deb  404  Not Found [IP: 91.189.91.13 80]
+I, [2016-03-15T12:22:48.093353 #33508]  INFO -- default-ubuntu-1404: 
+I, [2016-03-15T12:22:48.093365 #33508]  INFO -- default-ubuntu-1404: E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux-libc-dev_3.13.0-77.121_amd64.deb  404  Not Found [IP: 91.189.91.13 80]
+I, [2016-03-15T12:22:48.093377 #33508]  INFO -- default-ubuntu-1404: 
+I, [2016-03-15T12:22:48.093389 #33508]  INFO -- default-ubuntu-1404: E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/libc6-dev_2.19-0ubuntu6.6_amd64.deb  404  Not Found [IP: 91.189.91.13 80]
+I, [2016-03-15T12:22:48.093401 #33508]  INFO -- default-ubuntu-1404: 
+I, [2016-03-15T12:22:48.093413 #33508]  INFO -- default-ubuntu-1404: E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+I, [2016-03-15T12:22:48.093454 #33508]  INFO -- default-ubuntu-1404: ---- End output of apt-get -q -y install libtool=2.4.2-1.7ubuntu1 ----
+I, [2016-03-15T12:22:48.093467 #33508]  INFO -- default-ubuntu-1404: Ran apt-get -q -y install libtool=2.4.2-1.7ubuntu1 returned 100
+I, [2016-03-15T12:22:48.823878 #33508]  INFO -- default-ubuntu-1404: [2016-03-15T19:22:48+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+E, [2016-03-15T12:22:48.866929 #33508] ERROR -- default-ubuntu-1404: Converge failed on instance <default-ubuntu-1404>.
+E, [2016-03-15T12:22:48.867023 #33508] ERROR -- default-ubuntu-1404: ------Exception-------
+E, [2016-03-15T12:22:48.867039 #33508] ERROR -- default-ubuntu-1404: Class: Kitchen::ActionFailed
+E, [2016-03-15T12:22:48.867049 #33508] ERROR -- default-ubuntu-1404: Message: SSH exited (1) for command: [sh -c '
+
+sudo -E /opt/chef/bin/chef-client --local-mode --config /tmp/kitchen/client.rb --log_level warn --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json --chef-zero-port 8889
+']
+E, [2016-03-15T12:22:48.867058 #33508] ERROR -- default-ubuntu-1404: ---Nested Exception---
+E, [2016-03-15T12:22:48.867067 #33508] ERROR -- default-ubuntu-1404: Class: Kitchen::Transport::SshFailed
+E, [2016-03-15T12:22:48.867075 #33508] ERROR -- default-ubuntu-1404: Message: SSH exited (1) for command: [sh -c '
+
+sudo -E /opt/chef/bin/chef-client --local-mode --config /tmp/kitchen/client.rb --log_level warn --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json --chef-zero-port 8889
+']
+E, [2016-03-15T12:22:48.867101 #33508] ERROR -- default-ubuntu-1404: ------Backtrace-------
+E, [2016-03-15T12:22:48.867111 #33508] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/driver/ssh_base.rb:85:in `rescue in converge'
+E, [2016-03-15T12:22:48.867120 #33508] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/driver/ssh_base.rb:88:in `converge'
+E, [2016-03-15T12:22:48.867128 #33508] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:547:in `legacy_ssh_base_converge'
+E, [2016-03-15T12:22:48.867137 #33508] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:371:in `block in converge_action'
+E, [2016-03-15T12:22:48.867313 #33508] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:495:in `call'
+E, [2016-03-15T12:22:48.867345 #33508] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:495:in `synchronize_or_call'
+E, [2016-03-15T12:22:48.867354 #33508] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:460:in `block in action'
+E, [2016-03-15T12:22:48.867363 #33508] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-03-15T12:22:48.867372 #33508] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:459:in `action'
+E, [2016-03-15T12:22:48.867382 #33508] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:369:in `converge_action'
+E, [2016-03-15T12:22:48.867391 #33508] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2016-03-15T12:22:48.867400 #33508] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:347:in `each'
+E, [2016-03-15T12:22:48.867409 #33508] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2016-03-15T12:22:48.867417 #33508] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:138:in `converge'
+E, [2016-03-15T12:22:48.867426 #33508] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/command.rb:176:in `public_send'
+E, [2016-03-15T12:22:48.867435 #33508] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2016-03-15T12:22:48.867446 #33508] ERROR -- default-ubuntu-1404: ----------------------
