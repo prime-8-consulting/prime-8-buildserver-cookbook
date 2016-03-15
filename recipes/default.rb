@@ -17,5 +17,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+#bash 'update apt' do 
+ # code 'sudo sed -i "/^# deb.*multiverse/ s/^# //" /etc/apt/sources.list && sudo apt-get update && sudo apt-get dist-upgrade'
+#end
+
 include_recipe 'sbp_packer'
 
