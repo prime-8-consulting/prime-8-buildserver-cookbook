@@ -2,3 +2,4 @@ Berksfile.lock
 .swn
 .swp
 .swa
+.kitchen/

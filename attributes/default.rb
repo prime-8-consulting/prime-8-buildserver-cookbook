@@ -21,4 +21,5 @@ EOF
 node.default['packer']['checksums'] = Hash[
     node['packer']['raw_checksums'].split("\n").collect { |s| s.split.reverse }
 ]
-
+filename = "packer_#{node['packer']['version']}_#{node['os']}_#{node['packer']['arch']}.zip"
+default['packer']['checksum'] = node['packer']['checksums'][filename]

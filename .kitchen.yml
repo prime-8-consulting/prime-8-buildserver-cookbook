@@ -18,6 +18,7 @@ suites:
 
   - name: docker
     run_list:
+      - recipe[sbp_packer::default]
       - recipe[prime-8-buildserver::jenkins]
     attributes:
 

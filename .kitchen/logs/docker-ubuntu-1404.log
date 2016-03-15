@@ -1,0 +1,100 @@
+I, [2016-03-15T16:21:39.026849 #43347]  INFO -- docker-ubuntu-1404: -----> Converging <docker-ubuntu-1404>...
+W, [2016-03-15T16:21:39.027451 #43347]  WARN -- docker-ubuntu-1404: Running legacy converge for 'Docker' Driver
+I, [2016-03-15T16:21:39.027792 #43347]  INFO -- docker-ubuntu-1404: Preparing files for transfer
+I, [2016-03-15T16:21:39.027940 #43347]  INFO -- docker-ubuntu-1404: Preparing dna.json
+I, [2016-03-15T16:21:39.028204 #43347]  INFO -- docker-ubuntu-1404: Resolving cookbook dependencies with Berkshelf 4.0.1...
+I, [2016-03-15T16:21:39.487613 #43347]  INFO -- docker-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2016-03-15T16:21:39.518303 #43347]  INFO -- docker-ubuntu-1404: Preparing validation.pem
+I, [2016-03-15T16:21:39.518711 #43347]  INFO -- docker-ubuntu-1404: Preparing client.rb
+I, [2016-03-15T16:21:39.593967 #43347]  INFO -- docker-ubuntu-1404: -----> Chef Omnibus installation detected (install only if missing)
+I, [2016-03-15T16:21:39.634621 #43347]  INFO -- docker-ubuntu-1404: Transferring files to <docker-ubuntu-1404>
+I, [2016-03-15T16:21:56.346832 #43347]  INFO -- docker-ubuntu-1404: Starting Chef Client, version 12.8.1
+I, [2016-03-15T16:21:57.631989 #43347]  INFO -- docker-ubuntu-1404: resolving cookbooks for run list: ["sbp_packer::default", "prime-8-buildserver::jenkins"]
+I, [2016-03-15T16:22:00.801683 #43347]  INFO -- docker-ubuntu-1404: Synchronizing Cookbooks:
+I, [2016-03-15T16:22:00.815109 #43347]  INFO -- docker-ubuntu-1404:   - sbp_packer (1.3.0)
+I, [2016-03-15T16:22:00.816912 #43347]  INFO -- docker-ubuntu-1404:   - prime-8-buildserver (0.0.1)
+I, [2016-03-15T16:22:00.824375 #43347]  INFO -- docker-ubuntu-1404:   - golang (1.7.0)
+I, [2016-03-15T16:22:00.835645 #43347]  INFO -- docker-ubuntu-1404:   - teamcity_server (0.0.0)
+I, [2016-03-15T16:22:00.844119 #43347]  INFO -- docker-ubuntu-1404:   - build-essential (2.3.1)
+I, [2016-03-15T16:22:00.846646 #43347]  INFO -- docker-ubuntu-1404:   - jenkins (2.4.1)
+I, [2016-03-15T16:22:00.852706 #43347]  INFO -- docker-ubuntu-1404:   - ark (1.0.1)
+I, [2016-03-15T16:22:00.871764 #43347]  INFO -- docker-ubuntu-1404:   - seven_zip (2.0.0)
+I, [2016-03-15T16:22:00.872976 #43347]  INFO -- docker-ubuntu-1404:   - windows (1.39.2)
+I, [2016-03-15T16:22:00.886787 #43347]  INFO -- docker-ubuntu-1404:   - java (1.39.0)
+I, [2016-03-15T16:22:00.896158 #43347]  INFO -- docker-ubuntu-1404:   - bluepill (2.4.2)
+I, [2016-03-15T16:22:00.912852 #43347]  INFO -- docker-ubuntu-1404:   - runit (1.7.6)
+I, [2016-03-15T16:22:00.912935 #43347]  INFO -- docker-ubuntu-1404:   - apt (2.9.2)
+I, [2016-03-15T16:22:00.918919 #43347]  INFO -- docker-ubuntu-1404:   - 7-zip (1.0.2)
+I, [2016-03-15T16:22:00.923286 #43347]  INFO -- docker-ubuntu-1404:   - yum (3.10.0)
+I, [2016-03-15T16:22:00.928509 #43347]  INFO -- docker-ubuntu-1404:   - rsyslog (4.0.0)
+I, [2016-03-15T16:22:00.929970 #43347]  INFO -- docker-ubuntu-1404:   - chef_handler (1.3.0)
+I, [2016-03-15T16:22:00.937945 #43347]  INFO -- docker-ubuntu-1404:   - packagecloud (0.2.0)
+I, [2016-03-15T16:22:00.956546 #43347]  INFO -- docker-ubuntu-1404:   - compat_resource (12.9.0)
+I, [2016-03-15T16:22:00.958973 #43347]  INFO -- docker-ubuntu-1404: Installing Cookbook Gems:
+I, [2016-03-15T16:22:00.963636 #43347]  INFO -- docker-ubuntu-1404: Compiling Cookbooks...
+I, [2016-03-15T16:22:01.247075 #43347]  INFO -- docker-ubuntu-1404: Converging 25 resources
+I, [2016-03-15T16:22:01.247584 #43347]  INFO -- docker-ubuntu-1404: Recipe: ark::default
+I, [2016-03-15T16:22:02.601822 #43347]  INFO -- docker-ubuntu-1404:   * apt_package[libtool] action install (up to date)
+I, [2016-03-15T16:22:03.952085 #43347]  INFO -- docker-ubuntu-1404:   * apt_package[autoconf] action install (up to date)
+I, [2016-03-15T16:22:05.285814 #43347]  INFO -- docker-ubuntu-1404:   * apt_package[make] action install (up to date)
+I, [2016-03-15T16:22:06.645726 #43347]  INFO -- docker-ubuntu-1404:   * apt_package[unzip] action install (up to date)
+I, [2016-03-15T16:22:07.964578 #43347]  INFO -- docker-ubuntu-1404:   * apt_package[rsync] action install (up to date)
+I, [2016-03-15T16:22:09.283765 #43347]  INFO -- docker-ubuntu-1404:   * apt_package[gcc] action install (up to date)
+I, [2016-03-15T16:22:10.614623 #43347]  INFO -- docker-ubuntu-1404:   * apt_package[autogen] action install (up to date)
+I, [2016-03-15T16:22:11.936039 #43347]  INFO -- docker-ubuntu-1404:   * apt_package[shtool] action install (up to date)
+I, [2016-03-15T16:22:13.280552 #43347]  INFO -- docker-ubuntu-1404:   * apt_package[pkg-config] action install (up to date)
+I, [2016-03-15T16:22:13.280693 #43347]  INFO -- docker-ubuntu-1404: Recipe: sbp_packer::install_binary
+I, [2016-03-15T16:22:13.285916 #43347]  INFO -- docker-ubuntu-1404:   * ark[packer] action install
+I, [2016-03-15T16:22:13.288125 #43347]  INFO -- docker-ubuntu-1404:     * directory[/usr/local/packer-0.10.0] action create (up to date)
+I, [2016-03-15T16:22:14.913800 #43347]  INFO -- docker-ubuntu-1404:     * remote_file[/tmp/kitchen/cache/packer-0.10.0.zip] action create
+I, [2016-03-15T16:22:15.004447 #43347]  INFO -- docker-ubuntu-1404:       - create new file /tmp/kitchen/cache/packer-0.10.0.zip
+I, [2016-03-15T16:22:15.004509 #43347]  INFO -- docker-ubuntu-1404:       - update content in file /tmp/kitchen/cache/packer-0.10.0.zip from none to eadd33
+I, [2016-03-15T16:22:15.005413 #43347]  INFO -- docker-ubuntu-1404:       (new content is binary, diff output suppressed)
+I, [2016-03-15T16:22:15.005901 #43347]  INFO -- docker-ubuntu-1404:     * execute[unpack /tmp/kitchen/cache/packer-0.10.0.zip] action nothing (skipped due to action :nothing)
+I, [2016-03-15T16:22:15.006113 #43347]  INFO -- docker-ubuntu-1404:     * execute[set owner on /usr/local/packer-0.10.0] action nothing (skipped due to action :nothing)
+I, [2016-03-15T16:22:15.007105 #43347]  INFO -- docker-ubuntu-1404:     * link[/usr/local/bin/packer] action create
+I, [2016-03-15T16:22:15.007355 #43347]  INFO -- docker-ubuntu-1404:       - create symlink at /usr/local/bin/packer to /usr/local/packer-0.10.0/packer
+I, [2016-03-15T16:22:15.008152 #43347]  INFO -- docker-ubuntu-1404:     * link[/usr/local/packer] action create
+I, [2016-03-15T16:22:15.008873 #43347]  INFO -- docker-ubuntu-1404:       - create symlink at /usr/local/packer to /usr/local/packer-0.10.0
+I, [2016-03-15T16:22:15.010104 #43347]  INFO -- docker-ubuntu-1404:     * template[/etc/profile.d/packer.sh] action create (skipped due to only_if)
+I, [2016-03-15T16:22:15.010452 #43347]  INFO -- docker-ubuntu-1404:     * ruby_block[adding '/usr/local/packer-0.10.0/bin' to chef-client ENV['PATH']] action run (skipped due to only_if)
+I, [2016-03-15T16:22:15.374619 #43347]  INFO -- docker-ubuntu-1404:     * execute[unpack /tmp/kitchen/cache/packer-0.10.0.zip] action run
+I, [2016-03-15T16:22:15.374991 #43347]  INFO -- docker-ubuntu-1404:       - execute unzip -q -o /tmp/kitchen/cache/packer-0.10.0.zip -d /usr/local/packer-0.10.0
+I, [2016-03-15T16:22:15.393580 #43347]  INFO -- docker-ubuntu-1404:     * execute[set owner on /usr/local/packer-0.10.0] action run
+I, [2016-03-15T16:22:15.394012 #43347]  INFO -- docker-ubuntu-1404:       - execute chown -R root:0 /usr/local/packer-0.10.0
+I, [2016-03-15T16:22:15.394198 #43347]  INFO -- docker-ubuntu-1404:   
+I, [2016-03-15T16:22:15.394321 #43347]  INFO -- docker-ubuntu-1404: Recipe: apt::default
+I, [2016-03-15T16:22:15.394432 #43347]  INFO -- docker-ubuntu-1404:   * file[/var/lib/apt/periodic/update-success-stamp] action nothing (skipped due to action :nothing)
+I, [2016-03-15T16:22:15.396648 #43347]  INFO -- docker-ubuntu-1404:   * directory[/etc/apt/apt.conf.d] action create (up to date)
+I, [2016-03-15T16:22:15.402182 #43347]  INFO -- docker-ubuntu-1404:   * cookbook_file[/etc/apt/apt.conf.d/15update-stamp] action create (up to date)
+I, [2016-03-15T16:22:15.402699 #43347]  INFO -- docker-ubuntu-1404:   * execute[apt-get update] action nothing (skipped due to action :nothing)
+I, [2016-03-15T16:22:15.403365 #43347]  INFO -- docker-ubuntu-1404:   * execute[apt-get autoremove] action nothing (skipped due to action :nothing)
+I, [2016-03-15T16:22:15.403514 #43347]  INFO -- docker-ubuntu-1404:   * execute[apt-get autoclean] action nothing (skipped due to action :nothing)
+I, [2016-03-15T16:22:15.403607 #43347]  INFO -- docker-ubuntu-1404:   * execute[apt-get-update-periodic] action run (skipped due to not_if)
+I, [2016-03-15T16:22:15.406427 #43347]  INFO -- docker-ubuntu-1404:   * directory[/var/cache/local] action create (up to date)
+I, [2016-03-15T16:22:15.414852 #43347]  INFO -- docker-ubuntu-1404:   * directory[/var/cache/local/preseeding] action create (up to date)
+I, [2016-03-15T16:22:15.415619 #43347]  INFO -- docker-ubuntu-1404:   * template[/etc/apt/apt.conf.d/10recommends] action create (up to date)
+I, [2016-03-15T16:22:16.783534 #43347]  INFO -- docker-ubuntu-1404:   * apt_package[apt-transport-https] action install (up to date)
+I, [2016-03-15T16:22:16.783795 #43347]  INFO -- docker-ubuntu-1404: Recipe: jenkins::_master_package
+I, [2016-03-15T16:22:16.788213 #43347]  INFO -- docker-ubuntu-1404:   * apt_repository[jenkins] action add
+I, [2016-03-15T16:22:16.938583 #43347]  INFO -- docker-ubuntu-1404:     * remote_file[/tmp/kitchen/cache/jenkins-ci.org.key] action create (up to date)
+I, [2016-03-15T16:22:17.647580 #43347]  INFO -- docker-ubuntu-1404:     * execute[install-key jenkins-ci.org.key] action run (skipped due to not_if)
+I, [2016-03-15T16:22:17.647638 #43347]  INFO -- docker-ubuntu-1404:     * file[/var/lib/apt/periodic/update-success-stamp] action nothing (skipped due to action :nothing)
+I, [2016-03-15T16:22:17.647673 #43347]  INFO -- docker-ubuntu-1404:     * execute[apt-cache gencaches] action nothing (skipped due to action :nothing)
+I, [2016-03-15T16:22:17.647687 #43347]  INFO -- docker-ubuntu-1404:     * execute[apt-get update] action nothing (skipped due to action :nothing)
+I, [2016-03-15T16:22:17.648520 #43347]  INFO -- docker-ubuntu-1404:     * file[/etc/apt/sources.list.d/jenkins.list] action create (up to date)
+I, [2016-03-15T16:22:17.648843 #43347]  INFO -- docker-ubuntu-1404:      (up to date)
+I, [2016-03-15T16:22:18.961808 #43347]  INFO -- docker-ubuntu-1404:   * apt_package[jenkins] action install (up to date)
+I, [2016-03-15T16:22:19.007642 #43347]  INFO -- docker-ubuntu-1404:   * template[/etc/default/jenkins] action create (up to date)
+I, [2016-03-15T16:22:19.057371 #43347]  INFO -- docker-ubuntu-1404:   * service[jenkins] action enable (up to date)
+I, [2016-03-15T16:22:19.112448 #43347]  INFO -- docker-ubuntu-1404:   * service[jenkins] action start (up to date)
+I, [2016-03-15T16:22:19.228440 #43347]  INFO -- docker-ubuntu-1404: 
+I, [2016-03-15T16:22:19.228509 #43347]  INFO -- docker-ubuntu-1404: Running handlers:
+I, [2016-03-15T16:22:19.229024 #43347]  INFO -- docker-ubuntu-1404: Running handlers complete
+I, [2016-03-15T16:22:19.229067 #43347]  INFO -- docker-ubuntu-1404: 
+I, [2016-03-15T16:22:19.229105 #43347]  INFO -- docker-ubuntu-1404: Deprecated features used!
+I, [2016-03-15T16:22:19.229141 #43347]  INFO -- docker-ubuntu-1404:   The on_platforms option to node_map has been deprecated at 1 location:
+I, [2016-03-15T16:22:19.229525 #43347]  INFO -- docker-ubuntu-1404:     - /tmp/kitchen/cache/cookbooks/jenkins/libraries/slave_windows.rb:29:in `<class:JenkinsWindowsSlave>'
+I, [2016-03-15T16:22:19.229763 #43347]  INFO -- docker-ubuntu-1404: 
+I, [2016-03-15T16:22:19.229965 #43347]  INFO -- docker-ubuntu-1404: Chef Client finished, 6/42 resources updated in 22 seconds
+I, [2016-03-15T16:22:20.398945 #43347]  INFO -- docker-ubuntu-1404: Finished converging <docker-ubuntu-1404> (0m41.37s).

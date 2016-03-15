@@ -1,3 +1,3 @@
-I, [2016-03-15T15:15:36.826799 #36572]  INFO -- Kitchen: -----> Starting Kitchen (v1.5.0)
-I, [2016-03-15T15:15:37.261840 #36572]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
-E, [2016-03-15T15:16:04.035109 #36572] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1404>.
+I, [2016-03-15T16:21:38.550201 #43347]  INFO -- Kitchen: -----> Starting Kitchen (v1.5.0)
+I, [2016-03-15T16:21:39.026764 #43347]  INFO -- Kitchen: -----> Converging <docker-ubuntu-1404>...
+I, [2016-03-15T16:22:20.400363 #43347]  INFO -- Kitchen: -----> Kitchen is finished. (0m41.85s)
