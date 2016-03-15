@@ -18,13 +18,11 @@ suites:
 
   - name: docker
     run_list:
-      - recipe[prime-8-buildserver::default]
       - recipe[prime-8-buildserver::jenkins]
     attributes:
 
   - name: ec2
     run_list: 
-      - recipe[prime-8-buildserver::default]
       - recipe[prime-8-buildserver::jenkins]
     driver:
       name: ec2

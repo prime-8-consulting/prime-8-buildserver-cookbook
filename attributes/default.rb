@@ -17,3 +17,8 @@ bd4fb4c18b96e5a389a7d91d1130b0e33ed4f20738ed3830dfb7af4e34dffe14  packer_0.10.0_
 9e3e1a8b1e83ac13f9e16c7b8ff707e3f077e882ddee9ee253d1bf3ebe873df2  packer_0.10.0_windows_386.zip
 0c19949295e32320171f0e5d4e24d0e938f3986f941593764c7ee19e762046cf  packer_0.10.0_windows_amd64.zip
 EOF
+
+node.default['packer']['checksums'] = Hash[
+    node['packer']['raw_checksums'].split("\n").collect { |s| s.split.reverse }
+]
+
