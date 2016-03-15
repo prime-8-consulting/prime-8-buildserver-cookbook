@@ -6,3 +6,4 @@ metadata
 cookbook 'teamcity_server'
 cookbook 'jenkins'
 cookbook 'sbp_packer'
+cookbook 'jenkins'
