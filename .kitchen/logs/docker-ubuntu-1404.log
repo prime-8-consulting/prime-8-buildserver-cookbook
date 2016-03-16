@@ -1,100 +1,278 @@
-I, [2016-03-15T16:21:39.026849 #43347]  INFO -- docker-ubuntu-1404: -----> Converging <docker-ubuntu-1404>...
-W, [2016-03-15T16:21:39.027451 #43347]  WARN -- docker-ubuntu-1404: Running legacy converge for 'Docker' Driver
-I, [2016-03-15T16:21:39.027792 #43347]  INFO -- docker-ubuntu-1404: Preparing files for transfer
-I, [2016-03-15T16:21:39.027940 #43347]  INFO -- docker-ubuntu-1404: Preparing dna.json
-I, [2016-03-15T16:21:39.028204 #43347]  INFO -- docker-ubuntu-1404: Resolving cookbook dependencies with Berkshelf 4.0.1...
-I, [2016-03-15T16:21:39.487613 #43347]  INFO -- docker-ubuntu-1404: Removing non-cookbook files before transfer
-I, [2016-03-15T16:21:39.518303 #43347]  INFO -- docker-ubuntu-1404: Preparing validation.pem
-I, [2016-03-15T16:21:39.518711 #43347]  INFO -- docker-ubuntu-1404: Preparing client.rb
-I, [2016-03-15T16:21:39.593967 #43347]  INFO -- docker-ubuntu-1404: -----> Chef Omnibus installation detected (install only if missing)
-I, [2016-03-15T16:21:39.634621 #43347]  INFO -- docker-ubuntu-1404: Transferring files to <docker-ubuntu-1404>
-I, [2016-03-15T16:21:56.346832 #43347]  INFO -- docker-ubuntu-1404: Starting Chef Client, version 12.8.1
-I, [2016-03-15T16:21:57.631989 #43347]  INFO -- docker-ubuntu-1404: resolving cookbooks for run list: ["sbp_packer::default", "prime-8-buildserver::jenkins"]
-I, [2016-03-15T16:22:00.801683 #43347]  INFO -- docker-ubuntu-1404: Synchronizing Cookbooks:
-I, [2016-03-15T16:22:00.815109 #43347]  INFO -- docker-ubuntu-1404:   - sbp_packer (1.3.0)
-I, [2016-03-15T16:22:00.816912 #43347]  INFO -- docker-ubuntu-1404:   - prime-8-buildserver (0.0.1)
-I, [2016-03-15T16:22:00.824375 #43347]  INFO -- docker-ubuntu-1404:   - golang (1.7.0)
-I, [2016-03-15T16:22:00.835645 #43347]  INFO -- docker-ubuntu-1404:   - teamcity_server (0.0.0)
-I, [2016-03-15T16:22:00.844119 #43347]  INFO -- docker-ubuntu-1404:   - build-essential (2.3.1)
-I, [2016-03-15T16:22:00.846646 #43347]  INFO -- docker-ubuntu-1404:   - jenkins (2.4.1)
-I, [2016-03-15T16:22:00.852706 #43347]  INFO -- docker-ubuntu-1404:   - ark (1.0.1)
-I, [2016-03-15T16:22:00.871764 #43347]  INFO -- docker-ubuntu-1404:   - seven_zip (2.0.0)
-I, [2016-03-15T16:22:00.872976 #43347]  INFO -- docker-ubuntu-1404:   - windows (1.39.2)
-I, [2016-03-15T16:22:00.886787 #43347]  INFO -- docker-ubuntu-1404:   - java (1.39.0)
-I, [2016-03-15T16:22:00.896158 #43347]  INFO -- docker-ubuntu-1404:   - bluepill (2.4.2)
-I, [2016-03-15T16:22:00.912852 #43347]  INFO -- docker-ubuntu-1404:   - runit (1.7.6)
-I, [2016-03-15T16:22:00.912935 #43347]  INFO -- docker-ubuntu-1404:   - apt (2.9.2)
-I, [2016-03-15T16:22:00.918919 #43347]  INFO -- docker-ubuntu-1404:   - 7-zip (1.0.2)
-I, [2016-03-15T16:22:00.923286 #43347]  INFO -- docker-ubuntu-1404:   - yum (3.10.0)
-I, [2016-03-15T16:22:00.928509 #43347]  INFO -- docker-ubuntu-1404:   - rsyslog (4.0.0)
-I, [2016-03-15T16:22:00.929970 #43347]  INFO -- docker-ubuntu-1404:   - chef_handler (1.3.0)
-I, [2016-03-15T16:22:00.937945 #43347]  INFO -- docker-ubuntu-1404:   - packagecloud (0.2.0)
-I, [2016-03-15T16:22:00.956546 #43347]  INFO -- docker-ubuntu-1404:   - compat_resource (12.9.0)
-I, [2016-03-15T16:22:00.958973 #43347]  INFO -- docker-ubuntu-1404: Installing Cookbook Gems:
-I, [2016-03-15T16:22:00.963636 #43347]  INFO -- docker-ubuntu-1404: Compiling Cookbooks...
-I, [2016-03-15T16:22:01.247075 #43347]  INFO -- docker-ubuntu-1404: Converging 25 resources
-I, [2016-03-15T16:22:01.247584 #43347]  INFO -- docker-ubuntu-1404: Recipe: ark::default
-I, [2016-03-15T16:22:02.601822 #43347]  INFO -- docker-ubuntu-1404:   * apt_package[libtool] action install (up to date)
-I, [2016-03-15T16:22:03.952085 #43347]  INFO -- docker-ubuntu-1404:   * apt_package[autoconf] action install (up to date)
-I, [2016-03-15T16:22:05.285814 #43347]  INFO -- docker-ubuntu-1404:   * apt_package[make] action install (up to date)
-I, [2016-03-15T16:22:06.645726 #43347]  INFO -- docker-ubuntu-1404:   * apt_package[unzip] action install (up to date)
-I, [2016-03-15T16:22:07.964578 #43347]  INFO -- docker-ubuntu-1404:   * apt_package[rsync] action install (up to date)
-I, [2016-03-15T16:22:09.283765 #43347]  INFO -- docker-ubuntu-1404:   * apt_package[gcc] action install (up to date)
-I, [2016-03-15T16:22:10.614623 #43347]  INFO -- docker-ubuntu-1404:   * apt_package[autogen] action install (up to date)
-I, [2016-03-15T16:22:11.936039 #43347]  INFO -- docker-ubuntu-1404:   * apt_package[shtool] action install (up to date)
-I, [2016-03-15T16:22:13.280552 #43347]  INFO -- docker-ubuntu-1404:   * apt_package[pkg-config] action install (up to date)
-I, [2016-03-15T16:22:13.280693 #43347]  INFO -- docker-ubuntu-1404: Recipe: sbp_packer::install_binary
-I, [2016-03-15T16:22:13.285916 #43347]  INFO -- docker-ubuntu-1404:   * ark[packer] action install
-I, [2016-03-15T16:22:13.288125 #43347]  INFO -- docker-ubuntu-1404:     * directory[/usr/local/packer-0.10.0] action create (up to date)
-I, [2016-03-15T16:22:14.913800 #43347]  INFO -- docker-ubuntu-1404:     * remote_file[/tmp/kitchen/cache/packer-0.10.0.zip] action create
-I, [2016-03-15T16:22:15.004447 #43347]  INFO -- docker-ubuntu-1404:       - create new file /tmp/kitchen/cache/packer-0.10.0.zip
-I, [2016-03-15T16:22:15.004509 #43347]  INFO -- docker-ubuntu-1404:       - update content in file /tmp/kitchen/cache/packer-0.10.0.zip from none to eadd33
-I, [2016-03-15T16:22:15.005413 #43347]  INFO -- docker-ubuntu-1404:       (new content is binary, diff output suppressed)
-I, [2016-03-15T16:22:15.005901 #43347]  INFO -- docker-ubuntu-1404:     * execute[unpack /tmp/kitchen/cache/packer-0.10.0.zip] action nothing (skipped due to action :nothing)
-I, [2016-03-15T16:22:15.006113 #43347]  INFO -- docker-ubuntu-1404:     * execute[set owner on /usr/local/packer-0.10.0] action nothing (skipped due to action :nothing)
-I, [2016-03-15T16:22:15.007105 #43347]  INFO -- docker-ubuntu-1404:     * link[/usr/local/bin/packer] action create
-I, [2016-03-15T16:22:15.007355 #43347]  INFO -- docker-ubuntu-1404:       - create symlink at /usr/local/bin/packer to /usr/local/packer-0.10.0/packer
-I, [2016-03-15T16:22:15.008152 #43347]  INFO -- docker-ubuntu-1404:     * link[/usr/local/packer] action create
-I, [2016-03-15T16:22:15.008873 #43347]  INFO -- docker-ubuntu-1404:       - create symlink at /usr/local/packer to /usr/local/packer-0.10.0
-I, [2016-03-15T16:22:15.010104 #43347]  INFO -- docker-ubuntu-1404:     * template[/etc/profile.d/packer.sh] action create (skipped due to only_if)
-I, [2016-03-15T16:22:15.010452 #43347]  INFO -- docker-ubuntu-1404:     * ruby_block[adding '/usr/local/packer-0.10.0/bin' to chef-client ENV['PATH']] action run (skipped due to only_if)
-I, [2016-03-15T16:22:15.374619 #43347]  INFO -- docker-ubuntu-1404:     * execute[unpack /tmp/kitchen/cache/packer-0.10.0.zip] action run
-I, [2016-03-15T16:22:15.374991 #43347]  INFO -- docker-ubuntu-1404:       - execute unzip -q -o /tmp/kitchen/cache/packer-0.10.0.zip -d /usr/local/packer-0.10.0
-I, [2016-03-15T16:22:15.393580 #43347]  INFO -- docker-ubuntu-1404:     * execute[set owner on /usr/local/packer-0.10.0] action run
-I, [2016-03-15T16:22:15.394012 #43347]  INFO -- docker-ubuntu-1404:       - execute chown -R root:0 /usr/local/packer-0.10.0
-I, [2016-03-15T16:22:15.394198 #43347]  INFO -- docker-ubuntu-1404:   
-I, [2016-03-15T16:22:15.394321 #43347]  INFO -- docker-ubuntu-1404: Recipe: apt::default
-I, [2016-03-15T16:22:15.394432 #43347]  INFO -- docker-ubuntu-1404:   * file[/var/lib/apt/periodic/update-success-stamp] action nothing (skipped due to action :nothing)
-I, [2016-03-15T16:22:15.396648 #43347]  INFO -- docker-ubuntu-1404:   * directory[/etc/apt/apt.conf.d] action create (up to date)
-I, [2016-03-15T16:22:15.402182 #43347]  INFO -- docker-ubuntu-1404:   * cookbook_file[/etc/apt/apt.conf.d/15update-stamp] action create (up to date)
-I, [2016-03-15T16:22:15.402699 #43347]  INFO -- docker-ubuntu-1404:   * execute[apt-get update] action nothing (skipped due to action :nothing)
-I, [2016-03-15T16:22:15.403365 #43347]  INFO -- docker-ubuntu-1404:   * execute[apt-get autoremove] action nothing (skipped due to action :nothing)
-I, [2016-03-15T16:22:15.403514 #43347]  INFO -- docker-ubuntu-1404:   * execute[apt-get autoclean] action nothing (skipped due to action :nothing)
-I, [2016-03-15T16:22:15.403607 #43347]  INFO -- docker-ubuntu-1404:   * execute[apt-get-update-periodic] action run (skipped due to not_if)
-I, [2016-03-15T16:22:15.406427 #43347]  INFO -- docker-ubuntu-1404:   * directory[/var/cache/local] action create (up to date)
-I, [2016-03-15T16:22:15.414852 #43347]  INFO -- docker-ubuntu-1404:   * directory[/var/cache/local/preseeding] action create (up to date)
-I, [2016-03-15T16:22:15.415619 #43347]  INFO -- docker-ubuntu-1404:   * template[/etc/apt/apt.conf.d/10recommends] action create (up to date)
-I, [2016-03-15T16:22:16.783534 #43347]  INFO -- docker-ubuntu-1404:   * apt_package[apt-transport-https] action install (up to date)
-I, [2016-03-15T16:22:16.783795 #43347]  INFO -- docker-ubuntu-1404: Recipe: jenkins::_master_package
-I, [2016-03-15T16:22:16.788213 #43347]  INFO -- docker-ubuntu-1404:   * apt_repository[jenkins] action add
-I, [2016-03-15T16:22:16.938583 #43347]  INFO -- docker-ubuntu-1404:     * remote_file[/tmp/kitchen/cache/jenkins-ci.org.key] action create (up to date)
-I, [2016-03-15T16:22:17.647580 #43347]  INFO -- docker-ubuntu-1404:     * execute[install-key jenkins-ci.org.key] action run (skipped due to not_if)
-I, [2016-03-15T16:22:17.647638 #43347]  INFO -- docker-ubuntu-1404:     * file[/var/lib/apt/periodic/update-success-stamp] action nothing (skipped due to action :nothing)
-I, [2016-03-15T16:22:17.647673 #43347]  INFO -- docker-ubuntu-1404:     * execute[apt-cache gencaches] action nothing (skipped due to action :nothing)
-I, [2016-03-15T16:22:17.647687 #43347]  INFO -- docker-ubuntu-1404:     * execute[apt-get update] action nothing (skipped due to action :nothing)
-I, [2016-03-15T16:22:17.648520 #43347]  INFO -- docker-ubuntu-1404:     * file[/etc/apt/sources.list.d/jenkins.list] action create (up to date)
-I, [2016-03-15T16:22:17.648843 #43347]  INFO -- docker-ubuntu-1404:      (up to date)
-I, [2016-03-15T16:22:18.961808 #43347]  INFO -- docker-ubuntu-1404:   * apt_package[jenkins] action install (up to date)
-I, [2016-03-15T16:22:19.007642 #43347]  INFO -- docker-ubuntu-1404:   * template[/etc/default/jenkins] action create (up to date)
-I, [2016-03-15T16:22:19.057371 #43347]  INFO -- docker-ubuntu-1404:   * service[jenkins] action enable (up to date)
-I, [2016-03-15T16:22:19.112448 #43347]  INFO -- docker-ubuntu-1404:   * service[jenkins] action start (up to date)
-I, [2016-03-15T16:22:19.228440 #43347]  INFO -- docker-ubuntu-1404: 
-I, [2016-03-15T16:22:19.228509 #43347]  INFO -- docker-ubuntu-1404: Running handlers:
-I, [2016-03-15T16:22:19.229024 #43347]  INFO -- docker-ubuntu-1404: Running handlers complete
-I, [2016-03-15T16:22:19.229067 #43347]  INFO -- docker-ubuntu-1404: 
-I, [2016-03-15T16:22:19.229105 #43347]  INFO -- docker-ubuntu-1404: Deprecated features used!
-I, [2016-03-15T16:22:19.229141 #43347]  INFO -- docker-ubuntu-1404:   The on_platforms option to node_map has been deprecated at 1 location:
-I, [2016-03-15T16:22:19.229525 #43347]  INFO -- docker-ubuntu-1404:     - /tmp/kitchen/cache/cookbooks/jenkins/libraries/slave_windows.rb:29:in `<class:JenkinsWindowsSlave>'
-I, [2016-03-15T16:22:19.229763 #43347]  INFO -- docker-ubuntu-1404: 
-I, [2016-03-15T16:22:19.229965 #43347]  INFO -- docker-ubuntu-1404: Chef Client finished, 6/42 resources updated in 22 seconds
-I, [2016-03-15T16:22:20.398945 #43347]  INFO -- docker-ubuntu-1404: Finished converging <docker-ubuntu-1404> (0m41.37s).
+I, [2016-03-15T17:33:56.894754 #2804]  INFO -- docker-ubuntu-1404: -----> Converging <docker-ubuntu-1404>...
+W, [2016-03-15T17:33:56.895084 #2804]  WARN -- docker-ubuntu-1404: Running legacy converge for 'Docker' Driver
+I, [2016-03-15T17:33:56.895281 #2804]  INFO -- docker-ubuntu-1404: Preparing files for transfer
+I, [2016-03-15T17:33:56.895376 #2804]  INFO -- docker-ubuntu-1404: Preparing dna.json
+I, [2016-03-15T17:33:56.895649 #2804]  INFO -- docker-ubuntu-1404: Resolving cookbook dependencies with Berkshelf 4.0.1...
+I, [2016-03-15T17:33:58.994847 #2804]  INFO -- docker-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2016-03-15T17:33:59.004667 #2804]  INFO -- docker-ubuntu-1404: Preparing validation.pem
+I, [2016-03-15T17:33:59.028232 #2804]  INFO -- docker-ubuntu-1404: Preparing client.rb
+I, [2016-03-15T17:33:59.308258 #2804]  INFO -- docker-ubuntu-1404: -----> Installing Chef Omnibus (install only if missing)
+I, [2016-03-15T17:33:59.309005 #2804]  INFO -- docker-ubuntu-1404: Downloading https://www.chef.io/chef/install.sh to file /tmp/install.sh
+I, [2016-03-15T17:33:59.309328 #2804]  INFO -- docker-ubuntu-1404: Trying wget...
+I, [2016-03-15T17:33:59.639438 #2804]  INFO -- docker-ubuntu-1404: Download complete.
+I, [2016-03-15T17:33:59.695023 #2804]  INFO -- docker-ubuntu-1404: ubuntu 14.04 x86_64
+I, [2016-03-15T17:33:59.695099 #2804]  INFO -- docker-ubuntu-1404: Getting information for chef stable  for ubuntu...
+I, [2016-03-15T17:33:59.695133 #2804]  INFO -- docker-ubuntu-1404: downloading https://omnitruck-direct.chef.io/stable/chef/metadata?v=&p=ubuntu&pv=14.04&m=x86_64
+I, [2016-03-15T17:33:59.695163 #2804]  INFO -- docker-ubuntu-1404:   to file /tmp/install.sh.18/metadata.txt
+I, [2016-03-15T17:33:59.695606 #2804]  INFO -- docker-ubuntu-1404: trying wget...
+I, [2016-03-15T17:33:59.860479 #2804]  INFO -- docker-ubuntu-1404: url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/14.04/x86_64/chef_12.8.1-1_amd64.deb
+I, [2016-03-15T17:33:59.860533 #2804]  INFO -- docker-ubuntu-1404: md5	c438d5426fed0a32283e8d7e0e32e902
+I, [2016-03-15T17:33:59.860550 #2804]  INFO -- docker-ubuntu-1404: sha256	92b7f3eba0a62b20eced2eae03ec2a5e382da4b044c38c20d2902393683c77f7
+I, [2016-03-15T17:33:59.860808 #2804]  INFO -- docker-ubuntu-1404: version	12.8.1
+I, [2016-03-15T17:33:59.863782 #2804]  INFO -- docker-ubuntu-1404: downloaded metadata file looks valid...
+I, [2016-03-15T17:33:59.931832 #2804]  INFO -- docker-ubuntu-1404: downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/14.04/x86_64/chef_12.8.1-1_amd64.deb
+I, [2016-03-15T17:33:59.931893 #2804]  INFO -- docker-ubuntu-1404:   to file /tmp/install.sh.18/chef_12.8.1-1_amd64.deb
+I, [2016-03-15T17:33:59.932159 #2804]  INFO -- docker-ubuntu-1404: trying wget...
+I, [2016-03-15T17:34:17.203038 #2804]  INFO -- docker-ubuntu-1404: Comparing checksum with sha256sum...
+I, [2016-03-15T17:34:17.558157 #2804]  INFO -- docker-ubuntu-1404: 
+I, [2016-03-15T17:34:17.558757 #2804]  INFO -- docker-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2016-03-15T17:34:17.559030 #2804]  INFO -- docker-ubuntu-1404: 
+I, [2016-03-15T17:34:17.559457 #2804]  INFO -- docker-ubuntu-1404: You are installing an omnibus package without a version pin.  If you are installing
+I, [2016-03-15T17:34:17.560047 #2804]  INFO -- docker-ubuntu-1404: on production servers via an automated process this is DANGEROUS and you will
+I, [2016-03-15T17:34:17.560096 #2804]  INFO -- docker-ubuntu-1404: be upgraded without warning on new releases, even to new major releases.
+I, [2016-03-15T17:34:17.560127 #2804]  INFO -- docker-ubuntu-1404: Letting the version float is only appropriate in desktop, test, development or
+I, [2016-03-15T17:34:17.560140 #2804]  INFO -- docker-ubuntu-1404: CI/CD environments.
+I, [2016-03-15T17:34:17.560151 #2804]  INFO -- docker-ubuntu-1404: 
+I, [2016-03-15T17:34:17.560162 #2804]  INFO -- docker-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2016-03-15T17:34:17.560173 #2804]  INFO -- docker-ubuntu-1404: 
+I, [2016-03-15T17:34:17.560191 #2804]  INFO -- docker-ubuntu-1404: Installing chef 
+I, [2016-03-15T17:34:17.560202 #2804]  INFO -- docker-ubuntu-1404: installing with dpkg...
+I, [2016-03-15T17:34:17.861285 #2804]  INFO -- docker-ubuntu-1404: Selecting previously unselected package chef.
+I, [2016-03-15T17:34:18.306356 #2804]  INFO -- docker-ubuntu-1404: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16008 files and directories currently installed.)
+I, [2016-03-15T17:34:18.306721 #2804]  INFO -- docker-ubuntu-1404: Preparing to unpack .../chef_12.8.1-1_amd64.deb ...
+I, [2016-03-15T17:34:18.310304 #2804]  INFO -- docker-ubuntu-1404: Unpacking chef (12.8.1-1) ...
+I, [2016-03-15T17:34:24.582338 #2804]  INFO -- docker-ubuntu-1404: Setting up chef (12.8.1-1) ...
+I, [2016-03-15T17:34:24.763312 #2804]  INFO -- docker-ubuntu-1404: Thank you for installing Chef!
+I, [2016-03-15T17:34:24.844114 #2804]  INFO -- docker-ubuntu-1404: Transferring files to <docker-ubuntu-1404>
+I, [2016-03-15T17:34:40.296638 #2804]  INFO -- docker-ubuntu-1404: Starting Chef Client, version 12.8.1
+I, [2016-03-15T17:34:41.776934 #2804]  INFO -- docker-ubuntu-1404: Creating a new client identity for docker-ubuntu-1404 using the validator key.
+I, [2016-03-15T17:34:42.031268 #2804]  INFO -- docker-ubuntu-1404: resolving cookbooks for run list: ["sbp_packer::default", "prime-8-buildserver::jenkins"]
+I, [2016-03-15T17:34:44.551903 #2804]  INFO -- docker-ubuntu-1404: Synchronizing Cookbooks:
+I, [2016-03-15T17:34:44.637736 #2804]  INFO -- docker-ubuntu-1404:   - prime-8-buildserver (0.0.1)
+I, [2016-03-15T17:34:44.643119 #2804]  INFO -- docker-ubuntu-1404:   - sbp_packer (1.3.0)
+I, [2016-03-15T17:34:44.669822 #2804]  INFO -- docker-ubuntu-1404:   - ark (1.0.1)
+I, [2016-03-15T17:34:44.672026 #2804]  INFO -- docker-ubuntu-1404:   - golang (1.7.0)
+I, [2016-03-15T17:34:44.690910 #2804]  INFO -- docker-ubuntu-1404:   - teamcity_server (0.0.0)
+I, [2016-03-15T17:34:44.801617 #2804]  INFO -- docker-ubuntu-1404:   - jenkins (2.4.1)
+I, [2016-03-15T17:34:44.825098 #2804]  INFO -- docker-ubuntu-1404:   - build-essential (2.3.1)
+I, [2016-03-15T17:34:44.908461 #2804]  INFO -- docker-ubuntu-1404:   - seven_zip (2.0.0)
+I, [2016-03-15T17:34:44.916692 #2804]  INFO -- docker-ubuntu-1404:   - windows (1.39.2)
+I, [2016-03-15T17:34:44.931454 #2804]  INFO -- docker-ubuntu-1404:   - bluepill (2.4.2)
+I, [2016-03-15T17:34:44.988499 #2804]  INFO -- docker-ubuntu-1404:   - java (1.39.0)
+I, [2016-03-15T17:34:45.008585 #2804]  INFO -- docker-ubuntu-1404:   - apt (2.9.2)
+I, [2016-03-15T17:34:45.038302 #2804]  INFO -- docker-ubuntu-1404:   - runit (1.7.6)
+I, [2016-03-15T17:34:45.076569 #2804]  INFO -- docker-ubuntu-1404:   - yum (3.10.0)
+I, [2016-03-15T17:34:45.083140 #2804]  INFO -- docker-ubuntu-1404:   - 7-zip (1.0.2)
+I, [2016-03-15T17:34:45.089068 #2804]  INFO -- docker-ubuntu-1404:   - chef_handler (1.3.0)
+I, [2016-03-15T17:34:45.117638 #2804]  INFO -- docker-ubuntu-1404:   - rsyslog (4.0.0)
+I, [2016-03-15T17:34:45.135852 #2804]  INFO -- docker-ubuntu-1404:   - packagecloud (0.2.0)
+I, [2016-03-15T17:34:45.228862 #2804]  INFO -- docker-ubuntu-1404:   - compat_resource (12.9.0)
+I, [2016-03-15T17:34:45.232126 #2804]  INFO -- docker-ubuntu-1404: Installing Cookbook Gems:
+I, [2016-03-15T17:34:45.232181 #2804]  INFO -- docker-ubuntu-1404: Compiling Cookbooks...
+I, [2016-03-15T17:34:45.462772 #2804]  INFO -- docker-ubuntu-1404: Converging 25 resources
+I, [2016-03-15T17:34:45.463335 #2804]  INFO -- docker-ubuntu-1404: Recipe: ark::default
+I, [2016-03-15T17:41:00.858188 #2804]  INFO -- docker-ubuntu-1404:   * apt_package[libtool] action install
+I, [2016-03-15T17:41:00.858302 #2804]  INFO -- docker-ubuntu-1404:     
+I, [2016-03-15T17:41:00.858595 #2804]  INFO -- docker-ubuntu-1404:     ================================================================================
+I, [2016-03-15T17:41:00.858838 #2804]  INFO -- docker-ubuntu-1404:     Error executing action `install` on resource 'apt_package[libtool]'
+I, [2016-03-15T17:41:00.858867 #2804]  INFO -- docker-ubuntu-1404:     ================================================================================
+I, [2016-03-15T17:41:00.859025 #2804]  INFO -- docker-ubuntu-1404:     
+I, [2016-03-15T17:41:00.859109 #2804]  INFO -- docker-ubuntu-1404:     Mixlib::ShellOut::ShellCommandFailed
+I, [2016-03-15T17:41:00.859607 #2804]  INFO -- docker-ubuntu-1404:     ------------------------------------
+I, [2016-03-15T17:41:00.859751 #2804]  INFO -- docker-ubuntu-1404:     Expected process to exit with [0], but received '100'
+I, [2016-03-15T17:41:00.860053 #2804]  INFO -- docker-ubuntu-1404:     ---- Begin output of apt-get -q -y install libtool=2.4.2-1.7ubuntu1 ----
+I, [2016-03-15T17:41:00.860082 #2804]  INFO -- docker-ubuntu-1404:     STDOUT: Reading package lists...
+I, [2016-03-15T17:41:00.860160 #2804]  INFO -- docker-ubuntu-1404:     Building dependency tree...
+I, [2016-03-15T17:41:00.860183 #2804]  INFO -- docker-ubuntu-1404:     Reading state information...
+I, [2016-03-15T17:41:00.860535 #2804]  INFO -- docker-ubuntu-1404:     The following extra packages will be installed:
+I, [2016-03-15T17:41:00.860558 #2804]  INFO -- docker-ubuntu-1404:       autotools-dev binutils cpp cpp-4.8 gcc gcc-4.8 gcc-4.8-base libasan0
+I, [2016-03-15T17:41:00.860765 #2804]  INFO -- docker-ubuntu-1404:       libatomic1 libc-dev-bin libc6-dev libcloog-isl4 libgcc-4.8-dev libgmp10
+I, [2016-03-15T17:41:00.860788 #2804]  INFO -- docker-ubuntu-1404:       libgomp1 libisl10 libitm1 libltdl-dev libltdl7 libmpc3 libmpfr4 libquadmath0
+I, [2016-03-15T17:41:00.860802 #2804]  INFO -- docker-ubuntu-1404:       libstdc++6 libtsan0 linux-libc-dev manpages manpages-dev
+I, [2016-03-15T17:41:00.860814 #2804]  INFO -- docker-ubuntu-1404:     Suggested packages:
+I, [2016-03-15T17:41:00.861143 #2804]  INFO -- docker-ubuntu-1404:       binutils-doc cpp-doc gcc-4.8-locales gcc-multilib make autoconf automake1.9
+I, [2016-03-15T17:41:00.861167 #2804]  INFO -- docker-ubuntu-1404:       flex bison gdb gcc-doc gcc-4.8-multilib gcc-4.8-doc libgcc1-dbg libgomp1-dbg
+I, [2016-03-15T17:41:00.861195 #2804]  INFO -- docker-ubuntu-1404:       libitm1-dbg libatomic1-dbg libasan0-dbg libtsan0-dbg libquadmath0-dbg
+I, [2016-03-15T17:41:00.861208 #2804]  INFO -- docker-ubuntu-1404:       glibc-doc libtool-doc automaken gfortran fortran95-compiler gcj-jdk
+I, [2016-03-15T17:41:00.861220 #2804]  INFO -- docker-ubuntu-1404:       man-browser
+I, [2016-03-15T17:41:00.861232 #2804]  INFO -- docker-ubuntu-1404:     The following NEW packages will be installed:
+I, [2016-03-15T17:41:00.861619 #2804]  INFO -- docker-ubuntu-1404:       autotools-dev binutils cpp cpp-4.8 gcc gcc-4.8 libasan0 libatomic1
+I, [2016-03-15T17:41:00.861643 #2804]  INFO -- docker-ubuntu-1404:       libc-dev-bin libc6-dev libcloog-isl4 libgcc-4.8-dev libgmp10 libgomp1
+I, [2016-03-15T17:41:00.861657 #2804]  INFO -- docker-ubuntu-1404:       libisl10 libitm1 libltdl-dev libltdl7 libmpc3 libmpfr4 libquadmath0 libtool
+I, [2016-03-15T17:41:00.861669 #2804]  INFO -- docker-ubuntu-1404:       libtsan0 linux-libc-dev manpages manpages-dev
+I, [2016-03-15T17:41:00.861994 #2804]  INFO -- docker-ubuntu-1404:     The following packages will be upgraded:
+I, [2016-03-15T17:41:00.862018 #2804]  INFO -- docker-ubuntu-1404:       gcc-4.8-base libstdc++6
+I, [2016-03-15T17:41:00.862187 #2804]  INFO -- docker-ubuntu-1404:     2 upgraded, 26 newly installed, 0 to remove and 11 not upgraded.
+I, [2016-03-15T17:41:00.862209 #2804]  INFO -- docker-ubuntu-1404:     Need to get 20.6 MB of archives.
+I, [2016-03-15T17:41:00.862409 #2804]  INFO -- docker-ubuntu-1404:     After this operation, 74.5 MB of additional disk space will be used.
+I, [2016-03-15T17:41:00.862440 #2804]  INFO -- docker-ubuntu-1404:     Get:1 http://archive.ubuntu.com/ubuntu/ trusty-updates/main gcc-4.8-base amd64 4.8.4-2ubuntu1~14.04.1 [16.0 kB]
+I, [2016-03-15T17:41:00.862455 #2804]  INFO -- docker-ubuntu-1404:     Get:2 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libstdc++6 amd64 4.8.4-2ubuntu1~14.04.1 [259 kB]
+I, [2016-03-15T17:41:00.862468 #2804]  INFO -- docker-ubuntu-1404:     Get:3 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libasan0 amd64 4.8.4-2ubuntu1~14.04.1 [63.1 kB]
+I, [2016-03-15T17:41:00.862737 #2804]  INFO -- docker-ubuntu-1404:     Get:4 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libatomic1 amd64 4.8.4-2ubuntu1~14.04.1 [8640 B]
+I, [2016-03-15T17:41:00.862760 #2804]  INFO -- docker-ubuntu-1404:     Get:5 http://archive.ubuntu.com/ubuntu/ trusty/main libgmp10 amd64 2:5.1.3+dfsg-1ubuntu1 [218 kB]
+I, [2016-03-15T17:41:00.862773 #2804]  INFO -- docker-ubuntu-1404:     Get:6 http://archive.ubuntu.com/ubuntu/ trusty/main libisl10 amd64 0.12.2-1 [419 kB]
+I, [2016-03-15T17:41:00.862786 #2804]  INFO -- docker-ubuntu-1404:     Get:7 http://archive.ubuntu.com/ubuntu/ trusty/main libcloog-isl4 amd64 0.18.2-1 [57.5 kB]
+I, [2016-03-15T17:41:00.863105 #2804]  INFO -- docker-ubuntu-1404:     Get:8 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libgomp1 amd64 4.8.4-2ubuntu1~14.04.1 [23.1 kB]
+I, [2016-03-15T17:41:00.863240 #2804]  INFO -- docker-ubuntu-1404:     Get:9 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libitm1 amd64 4.8.4-2ubuntu1~14.04.1 [28.5 kB]
+I, [2016-03-15T17:41:00.863277 #2804]  INFO -- docker-ubuntu-1404:     Get:10 http://archive.ubuntu.com/ubuntu/ trusty/main libltdl7 amd64 2.4.2-1.7ubuntu1 [35.0 kB]
+I, [2016-03-15T17:41:00.863292 #2804]  INFO -- docker-ubuntu-1404:     Get:11 http://archive.ubuntu.com/ubuntu/ trusty/main libmpfr4 amd64 3.1.2-1 [203 kB]
+I, [2016-03-15T17:41:00.863527 #2804]  INFO -- docker-ubuntu-1404:     Get:12 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libquadmath0 amd64 4.8.4-2ubuntu1~14.04.1 [126 kB]
+I, [2016-03-15T17:41:00.863552 #2804]  INFO -- docker-ubuntu-1404:     Get:13 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libtsan0 amd64 4.8.4-2ubuntu1~14.04.1 [94.9 kB]
+I, [2016-03-15T17:41:00.863741 #2804]  INFO -- docker-ubuntu-1404:     Get:14 http://archive.ubuntu.com/ubuntu/ trusty/main libmpc3 amd64 1.0.1-1ubuntu1 [38.4 kB]
+I, [2016-03-15T17:41:00.863763 #2804]  INFO -- docker-ubuntu-1404:     Get:15 http://archive.ubuntu.com/ubuntu/ trusty/main manpages all 3.54-1ubuntu1 [627 kB]
+I, [2016-03-15T17:41:00.863777 #2804]  INFO -- docker-ubuntu-1404:     Get:16 http://archive.ubuntu.com/ubuntu/ trusty/main autotools-dev all 20130810.1 [44.3 kB]
+I, [2016-03-15T17:41:00.863789 #2804]  INFO -- docker-ubuntu-1404:     Get:17 http://archive.ubuntu.com/ubuntu/ trusty-updates/main binutils amd64 2.24-5ubuntu14 [2076 kB]
+I, [2016-03-15T17:41:00.863959 #2804]  INFO -- docker-ubuntu-1404:     Get:18 http://archive.ubuntu.com/ubuntu/ trusty-updates/main cpp-4.8 amd64 4.8.4-2ubuntu1~14.04.1 [4595 kB]
+I, [2016-03-15T17:41:00.863984 #2804]  INFO -- docker-ubuntu-1404:     Get:19 http://archive.ubuntu.com/ubuntu/ trusty/main cpp amd64 4:4.8.2-1ubuntu6 [27.5 kB]
+I, [2016-03-15T17:41:00.863998 #2804]  INFO -- docker-ubuntu-1404:     Get:20 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libgcc-4.8-dev amd64 4.8.4-2ubuntu1~14.04.1 [1688 kB]
+I, [2016-03-15T17:41:00.864095 #2804]  INFO -- docker-ubuntu-1404:     Get:21 http://archive.ubuntu.com/ubuntu/ trusty-updates/main gcc-4.8 amd64 4.8.4-2ubuntu1~14.04.1 [5056 kB]
+I, [2016-03-15T17:41:00.864114 #2804]  INFO -- docker-ubuntu-1404:     Get:22 http://archive.ubuntu.com/ubuntu/ trusty/main gcc amd64 4:4.8.2-1ubuntu6 [5098 B]
+I, [2016-03-15T17:41:00.864127 #2804]  INFO -- docker-ubuntu-1404:     Get:23 http://archive.ubuntu.com/ubuntu/ trusty/main libltdl-dev amd64 2.4.2-1.7ubuntu1 [157 kB]
+I, [2016-03-15T17:41:00.864159 #2804]  INFO -- docker-ubuntu-1404:     Get:24 http://archive.ubuntu.com/ubuntu/ trusty/main libtool amd64 2.4.2-1.7ubuntu1 [188 kB]
+I, [2016-03-15T17:41:00.864269 #2804]  INFO -- docker-ubuntu-1404:     Get:25 http://archive.ubuntu.com/ubuntu/ trusty/main manpages-dev all 3.54-1ubuntu1 [1820 kB]
+I, [2016-03-15T17:41:00.864288 #2804]  INFO -- docker-ubuntu-1404:     Err http://archive.ubuntu.com/ubuntu/ trusty-security/main libc-dev-bin amd64 2.19-0ubuntu6.6
+I, [2016-03-15T17:41:00.864301 #2804]  INFO -- docker-ubuntu-1404:       404  Not Found [IP: 91.189.88.152 80]
+I, [2016-03-15T17:41:00.864431 #2804]  INFO -- docker-ubuntu-1404:     Err http://archive.ubuntu.com/ubuntu/ trusty-security/main linux-libc-dev amd64 3.13.0-77.121
+I, [2016-03-15T17:41:00.864454 #2804]  INFO -- docker-ubuntu-1404:       404  Not Found [IP: 91.189.88.152 80]
+I, [2016-03-15T17:41:00.864468 #2804]  INFO -- docker-ubuntu-1404:     Err http://archive.ubuntu.com/ubuntu/ trusty-security/main libc6-dev amd64 2.19-0ubuntu6.6
+I, [2016-03-15T17:41:00.864480 #2804]  INFO -- docker-ubuntu-1404:       404  Not Found [IP: 91.189.88.152 80]
+I, [2016-03-15T17:41:00.864601 #2804]  INFO -- docker-ubuntu-1404:     Fetched 17.9 MB in 6min 11s (48.1 kB/s)
+I, [2016-03-15T17:41:00.864621 #2804]  INFO -- docker-ubuntu-1404:     STDERR: E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/libc-dev-bin_2.19-0ubuntu6.6_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+I, [2016-03-15T17:41:00.864634 #2804]  INFO -- docker-ubuntu-1404:     
+I, [2016-03-15T17:41:00.864726 #2804]  INFO -- docker-ubuntu-1404:     E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux-libc-dev_3.13.0-77.121_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+I, [2016-03-15T17:41:00.864745 #2804]  INFO -- docker-ubuntu-1404:     
+I, [2016-03-15T17:41:00.864759 #2804]  INFO -- docker-ubuntu-1404:     E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/libc6-dev_2.19-0ubuntu6.6_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+I, [2016-03-15T17:41:00.864789 #2804]  INFO -- docker-ubuntu-1404:     
+I, [2016-03-15T17:41:00.864903 #2804]  INFO -- docker-ubuntu-1404:     E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+I, [2016-03-15T17:41:00.864927 #2804]  INFO -- docker-ubuntu-1404:     ---- End output of apt-get -q -y install libtool=2.4.2-1.7ubuntu1 ----
+I, [2016-03-15T17:41:00.865031 #2804]  INFO -- docker-ubuntu-1404:     Ran apt-get -q -y install libtool=2.4.2-1.7ubuntu1 returned 100
+I, [2016-03-15T17:41:00.865107 #2804]  INFO -- docker-ubuntu-1404:     
+I, [2016-03-15T17:41:00.865179 #2804]  INFO -- docker-ubuntu-1404:     Resource Declaration:
+I, [2016-03-15T17:41:00.865268 #2804]  INFO -- docker-ubuntu-1404:     ---------------------
+I, [2016-03-15T17:41:00.865343 #2804]  INFO -- docker-ubuntu-1404:     # In /tmp/kitchen/cache/cookbooks/ark/recipes/default.rb
+I, [2016-03-15T17:41:00.865361 #2804]  INFO -- docker-ubuntu-1404:     
+I, [2016-03-15T17:41:00.865479 #2804]  INFO -- docker-ubuntu-1404:      22:   package pkg
+I, [2016-03-15T17:41:00.865554 #2804]  INFO -- docker-ubuntu-1404:      23: end
+I, [2016-03-15T17:41:00.865573 #2804]  INFO -- docker-ubuntu-1404:     
+I, [2016-03-15T17:41:00.865669 #2804]  INFO -- docker-ubuntu-1404:     Compiled Resource:
+I, [2016-03-15T17:41:00.865740 #2804]  INFO -- docker-ubuntu-1404:     ------------------
+I, [2016-03-15T17:41:00.865813 #2804]  INFO -- docker-ubuntu-1404:     # Declared in /tmp/kitchen/cache/cookbooks/ark/recipes/default.rb:22:in `block in from_file'
+I, [2016-03-15T17:41:00.865920 #2804]  INFO -- docker-ubuntu-1404:     
+I, [2016-03-15T17:41:00.865943 #2804]  INFO -- docker-ubuntu-1404:     apt_package("libtool") do
+I, [2016-03-15T17:41:00.865956 #2804]  INFO -- docker-ubuntu-1404:       package_name "libtool"
+I, [2016-03-15T17:41:00.866068 #2804]  INFO -- docker-ubuntu-1404:       action [:install]
+I, [2016-03-15T17:41:00.866087 #2804]  INFO -- docker-ubuntu-1404:       retries 0
+I, [2016-03-15T17:41:00.866166 #2804]  INFO -- docker-ubuntu-1404:       retry_delay 2
+I, [2016-03-15T17:41:00.866185 #2804]  INFO -- docker-ubuntu-1404:       default_guard_interpreter :default
+I, [2016-03-15T17:41:00.866283 #2804]  INFO -- docker-ubuntu-1404:       declared_type :package
+I, [2016-03-15T17:41:00.866358 #2804]  INFO -- docker-ubuntu-1404:       cookbook_name "ark"
+I, [2016-03-15T17:41:00.866376 #2804]  INFO -- docker-ubuntu-1404:       recipe_name "default"
+I, [2016-03-15T17:41:00.866405 #2804]  INFO -- docker-ubuntu-1404:     end
+I, [2016-03-15T17:41:00.866420 #2804]  INFO -- docker-ubuntu-1404:     
+I, [2016-03-15T17:41:00.866536 #2804]  INFO -- docker-ubuntu-1404: 
+I, [2016-03-15T17:41:00.866608 #2804]  INFO -- docker-ubuntu-1404: Running handlers:
+I, [2016-03-15T17:41:00.866756 #2804]  INFO -- docker-ubuntu-1404: [2016-03-16T00:41:00+00:00] ERROR: Running exception handlers
+I, [2016-03-15T17:41:00.866833 #2804]  INFO -- docker-ubuntu-1404: Running handlers complete
+I, [2016-03-15T17:41:00.866945 #2804]  INFO -- docker-ubuntu-1404: [2016-03-16T00:41:00+00:00] ERROR: Exception handlers complete
+I, [2016-03-15T17:41:00.867105 #2804]  INFO -- docker-ubuntu-1404: Chef Client failed. 0 resources updated in 06 minutes 20 seconds
+I, [2016-03-15T17:41:00.867183 #2804]  INFO -- docker-ubuntu-1404: [2016-03-16T00:41:00+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2016-03-15T17:41:00.867262 #2804]  INFO -- docker-ubuntu-1404: [2016-03-16T00:41:00+00:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+I, [2016-03-15T17:41:00.867359 #2804]  INFO -- docker-ubuntu-1404: [2016-03-16T00:41:00+00:00] ERROR: apt_package[libtool] (ark::default line 22) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0], but received '100'
+I, [2016-03-15T17:41:00.867379 #2804]  INFO -- docker-ubuntu-1404: ---- Begin output of apt-get -q -y install libtool=2.4.2-1.7ubuntu1 ----
+I, [2016-03-15T17:41:00.867560 #2804]  INFO -- docker-ubuntu-1404: STDOUT: Reading package lists...
+I, [2016-03-15T17:41:00.867581 #2804]  INFO -- docker-ubuntu-1404: Building dependency tree...
+I, [2016-03-15T17:41:00.867614 #2804]  INFO -- docker-ubuntu-1404: Reading state information...
+I, [2016-03-15T17:41:00.867628 #2804]  INFO -- docker-ubuntu-1404: The following extra packages will be installed:
+I, [2016-03-15T17:41:00.867640 #2804]  INFO -- docker-ubuntu-1404:   autotools-dev binutils cpp cpp-4.8 gcc gcc-4.8 gcc-4.8-base libasan0
+I, [2016-03-15T17:41:00.867653 #2804]  INFO -- docker-ubuntu-1404:   libatomic1 libc-dev-bin libc6-dev libcloog-isl4 libgcc-4.8-dev libgmp10
+I, [2016-03-15T17:41:00.867664 #2804]  INFO -- docker-ubuntu-1404:   libgomp1 libisl10 libitm1 libltdl-dev libltdl7 libmpc3 libmpfr4 libquadmath0
+I, [2016-03-15T17:41:00.867676 #2804]  INFO -- docker-ubuntu-1404:   libstdc++6 libtsan0 linux-libc-dev manpages manpages-dev
+I, [2016-03-15T17:41:00.867837 #2804]  INFO -- docker-ubuntu-1404: Suggested packages:
+I, [2016-03-15T17:41:00.867857 #2804]  INFO -- docker-ubuntu-1404:   binutils-doc cpp-doc gcc-4.8-locales gcc-multilib make autoconf automake1.9
+I, [2016-03-15T17:41:00.867871 #2804]  INFO -- docker-ubuntu-1404:   flex bison gdb gcc-doc gcc-4.8-multilib gcc-4.8-doc libgcc1-dbg libgomp1-dbg
+I, [2016-03-15T17:41:00.867926 #2804]  INFO -- docker-ubuntu-1404:   libitm1-dbg libatomic1-dbg libasan0-dbg libtsan0-dbg libquadmath0-dbg
+I, [2016-03-15T17:41:00.867950 #2804]  INFO -- docker-ubuntu-1404:   glibc-doc libtool-doc automaken gfortran fortran95-compiler gcj-jdk
+I, [2016-03-15T17:41:00.868000 #2804]  INFO -- docker-ubuntu-1404:   man-browser
+I, [2016-03-15T17:41:00.868017 #2804]  INFO -- docker-ubuntu-1404: The following NEW packages will be installed:
+I, [2016-03-15T17:41:00.868034 #2804]  INFO -- docker-ubuntu-1404:   autotools-dev binutils cpp cpp-4.8 gcc gcc-4.8 libasan0 libatomic1
+I, [2016-03-15T17:41:00.868130 #2804]  INFO -- docker-ubuntu-1404:   libc-dev-bin libc6-dev libcloog-isl4 libgcc-4.8-dev libgmp10 libgomp1
+I, [2016-03-15T17:41:00.868469 #2804]  INFO -- docker-ubuntu-1404:   libisl10 libitm1 libltdl-dev libltdl7 libmpc3 libmpfr4 libquadmath0 libtool
+I, [2016-03-15T17:41:00.868536 #2804]  INFO -- docker-ubuntu-1404:   libtsan0 linux-libc-dev manpages manpages-dev
+I, [2016-03-15T17:41:00.868556 #2804]  INFO -- docker-ubuntu-1404: The following packages will be upgraded:
+I, [2016-03-15T17:41:00.868569 #2804]  INFO -- docker-ubuntu-1404:   gcc-4.8-base libstdc++6
+I, [2016-03-15T17:41:00.868581 #2804]  INFO -- docker-ubuntu-1404: 2 upgraded, 26 newly installed, 0 to remove and 11 not upgraded.
+I, [2016-03-15T17:41:00.868592 #2804]  INFO -- docker-ubuntu-1404: Need to get 20.6 MB of archives.
+I, [2016-03-15T17:41:00.868603 #2804]  INFO -- docker-ubuntu-1404: After this operation, 74.5 MB of additional disk space will be used.
+I, [2016-03-15T17:41:00.868753 #2804]  INFO -- docker-ubuntu-1404: Get:1 http://archive.ubuntu.com/ubuntu/ trusty-updates/main gcc-4.8-base amd64 4.8.4-2ubuntu1~14.04.1 [16.0 kB]
+I, [2016-03-15T17:41:00.868773 #2804]  INFO -- docker-ubuntu-1404: Get:2 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libstdc++6 amd64 4.8.4-2ubuntu1~14.04.1 [259 kB]
+I, [2016-03-15T17:41:00.868787 #2804]  INFO -- docker-ubuntu-1404: Get:3 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libasan0 amd64 4.8.4-2ubuntu1~14.04.1 [63.1 kB]
+I, [2016-03-15T17:41:00.868799 #2804]  INFO -- docker-ubuntu-1404: Get:4 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libatomic1 amd64 4.8.4-2ubuntu1~14.04.1 [8640 B]
+I, [2016-03-15T17:41:00.868811 #2804]  INFO -- docker-ubuntu-1404: Get:5 http://archive.ubuntu.com/ubuntu/ trusty/main libgmp10 amd64 2:5.1.3+dfsg-1ubuntu1 [218 kB]
+I, [2016-03-15T17:41:00.868823 #2804]  INFO -- docker-ubuntu-1404: Get:6 http://archive.ubuntu.com/ubuntu/ trusty/main libisl10 amd64 0.12.2-1 [419 kB]
+I, [2016-03-15T17:41:00.868834 #2804]  INFO -- docker-ubuntu-1404: Get:7 http://archive.ubuntu.com/ubuntu/ trusty/main libcloog-isl4 amd64 0.18.2-1 [57.5 kB]
+I, [2016-03-15T17:41:00.870600 #2804]  INFO -- docker-ubuntu-1404: Get:8 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libgomp1 amd64 4.8.4-2ubuntu1~14.04.1 [23.1 kB]
+I, [2016-03-15T17:41:00.870639 #2804]  INFO -- docker-ubuntu-1404: Get:9 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libitm1 amd64 4.8.4-2ubuntu1~14.04.1 [28.5 kB]
+I, [2016-03-15T17:41:00.870655 #2804]  INFO -- docker-ubuntu-1404: Get:10 http://archive.ubuntu.com/ubuntu/ trusty/main libltdl7 amd64 2.4.2-1.7ubuntu1 [35.0 kB]
+I, [2016-03-15T17:41:00.870668 #2804]  INFO -- docker-ubuntu-1404: Get:11 http://archive.ubuntu.com/ubuntu/ trusty/main libmpfr4 amd64 3.1.2-1 [203 kB]
+I, [2016-03-15T17:41:00.870681 #2804]  INFO -- docker-ubuntu-1404: Get:12 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libquadmath0 amd64 4.8.4-2ubuntu1~14.04.1 [126 kB]
+I, [2016-03-15T17:41:00.870694 #2804]  INFO -- docker-ubuntu-1404: Get:13 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libtsan0 amd64 4.8.4-2ubuntu1~14.04.1 [94.9 kB]
+I, [2016-03-15T17:41:00.870707 #2804]  INFO -- docker-ubuntu-1404: Get:14 http://archive.ubuntu.com/ubuntu/ trusty/main libmpc3 amd64 1.0.1-1ubuntu1 [38.4 kB]
+I, [2016-03-15T17:41:00.871164 #2804]  INFO -- docker-ubuntu-1404: Get:15 http://archive.ubuntu.com/ubuntu/ trusty/main manpages all 3.54-1ubuntu1 [627 kB]
+I, [2016-03-15T17:41:00.871191 #2804]  INFO -- docker-ubuntu-1404: Get:16 http://archive.ubuntu.com/ubuntu/ trusty/main autotools-dev all 20130810.1 [44.3 kB]
+I, [2016-03-15T17:41:00.871206 #2804]  INFO -- docker-ubuntu-1404: Get:17 http://archive.ubuntu.com/ubuntu/ trusty-updates/main binutils amd64 2.24-5ubuntu14 [2076 kB]
+I, [2016-03-15T17:41:00.871277 #2804]  INFO -- docker-ubuntu-1404: Get:18 http://archive.ubuntu.com/ubuntu/ trusty-updates/main cpp-4.8 amd64 4.8.4-2ubuntu1~14.04.1 [4595 kB]
+I, [2016-03-15T17:41:00.871293 #2804]  INFO -- docker-ubuntu-1404: Get:19 http://archive.ubuntu.com/ubuntu/ trusty/main cpp amd64 4:4.8.2-1ubuntu6 [27.5 kB]
+I, [2016-03-15T17:41:00.871305 #2804]  INFO -- docker-ubuntu-1404: Get:20 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libgcc-4.8-dev amd64 4.8.4-2ubuntu1~14.04.1 [1688 kB]
+I, [2016-03-15T17:41:00.871636 #2804]  INFO -- docker-ubuntu-1404: Get:21 http://archive.ubuntu.com/ubuntu/ trusty-updates/main gcc-4.8 amd64 4.8.4-2ubuntu1~14.04.1 [5056 kB]
+I, [2016-03-15T17:41:00.871670 #2804]  INFO -- docker-ubuntu-1404: Get:22 http://archive.ubuntu.com/ubuntu/ trusty/main gcc amd64 4:4.8.2-1ubuntu6 [5098 B]
+I, [2016-03-15T17:41:00.871685 #2804]  INFO -- docker-ubuntu-1404: Get:23 http://archive.ubuntu.com/ubuntu/ trusty/main libltdl-dev amd64 2.4.2-1.7ubuntu1 [157 kB]
+I, [2016-03-15T17:41:00.871714 #2804]  INFO -- docker-ubuntu-1404: Get:24 http://archive.ubuntu.com/ubuntu/ trusty/main libtool amd64 2.4.2-1.7ubuntu1 [188 kB]
+I, [2016-03-15T17:41:00.871725 #2804]  INFO -- docker-ubuntu-1404: Get:25 http://archive.ubuntu.com/ubuntu/ trusty/main manpages-dev all 3.54-1ubuntu1 [1820 kB]
+I, [2016-03-15T17:41:00.871738 #2804]  INFO -- docker-ubuntu-1404: Err http://archive.ubuntu.com/ubuntu/ trusty-security/main libc-dev-bin amd64 2.19-0ubuntu6.6
+I, [2016-03-15T17:41:00.871946 #2804]  INFO -- docker-ubuntu-1404:   404  Not Found [IP: 91.189.88.152 80]
+I, [2016-03-15T17:41:00.871971 #2804]  INFO -- docker-ubuntu-1404: Err http://archive.ubuntu.com/ubuntu/ trusty-security/main linux-libc-dev amd64 3.13.0-77.121
+I, [2016-03-15T17:41:00.871986 #2804]  INFO -- docker-ubuntu-1404:   404  Not Found [IP: 91.189.88.152 80]
+I, [2016-03-15T17:41:00.871999 #2804]  INFO -- docker-ubuntu-1404: Err http://archive.ubuntu.com/ubuntu/ trusty-security/main libc6-dev amd64 2.19-0ubuntu6.6
+I, [2016-03-15T17:41:00.872041 #2804]  INFO -- docker-ubuntu-1404:   404  Not Found [IP: 91.189.88.152 80]
+I, [2016-03-15T17:41:00.872053 #2804]  INFO -- docker-ubuntu-1404: Fetched 17.9 MB in 6min 11s (48.1 kB/s)
+I, [2016-03-15T17:41:00.872198 #2804]  INFO -- docker-ubuntu-1404: STDERR: E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/libc-dev-bin_2.19-0ubuntu6.6_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+I, [2016-03-15T17:41:00.872218 #2804]  INFO -- docker-ubuntu-1404: 
+I, [2016-03-15T17:41:00.872232 #2804]  INFO -- docker-ubuntu-1404: E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux-libc-dev_3.13.0-77.121_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+I, [2016-03-15T17:41:00.872243 #2804]  INFO -- docker-ubuntu-1404: 
+I, [2016-03-15T17:41:00.872255 #2804]  INFO -- docker-ubuntu-1404: E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/libc6-dev_2.19-0ubuntu6.6_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+I, [2016-03-15T17:41:00.872267 #2804]  INFO -- docker-ubuntu-1404: 
+I, [2016-03-15T17:41:00.872422 #2804]  INFO -- docker-ubuntu-1404: E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+I, [2016-03-15T17:41:00.872446 #2804]  INFO -- docker-ubuntu-1404: ---- End output of apt-get -q -y install libtool=2.4.2-1.7ubuntu1 ----
+I, [2016-03-15T17:41:00.872459 #2804]  INFO -- docker-ubuntu-1404: Ran apt-get -q -y install libtool=2.4.2-1.7ubuntu1 returned 100
+I, [2016-03-15T17:41:02.740410 #2804]  INFO -- docker-ubuntu-1404: [2016-03-16T00:41:02+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+E, [2016-03-15T17:41:02.778154 #2804] ERROR -- docker-ubuntu-1404: Converge failed on instance <docker-ubuntu-1404>.
+E, [2016-03-15T17:41:02.778281 #2804] ERROR -- docker-ubuntu-1404: ------Exception-------
+E, [2016-03-15T17:41:02.778305 #2804] ERROR -- docker-ubuntu-1404: Class: Kitchen::ActionFailed
+E, [2016-03-15T17:41:02.778316 #2804] ERROR -- docker-ubuntu-1404: Message: SSH exited (1) for command: [sh -c '
+
+sudo -E /opt/chef/bin/chef-client --local-mode --config /tmp/kitchen/client.rb --log_level warn --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json --chef-zero-port 8889
+']
+E, [2016-03-15T17:41:02.778326 #2804] ERROR -- docker-ubuntu-1404: ---Nested Exception---
+E, [2016-03-15T17:41:02.778351 #2804] ERROR -- docker-ubuntu-1404: Class: Kitchen::Transport::SshFailed
+E, [2016-03-15T17:41:02.778360 #2804] ERROR -- docker-ubuntu-1404: Message: SSH exited (1) for command: [sh -c '
+
+sudo -E /opt/chef/bin/chef-client --local-mode --config /tmp/kitchen/client.rb --log_level warn --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json --chef-zero-port 8889
+']
+E, [2016-03-15T17:41:02.778378 #2804] ERROR -- docker-ubuntu-1404: ------Backtrace-------
+E, [2016-03-15T17:41:02.778388 #2804] ERROR -- docker-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/driver/ssh_base.rb:85:in `rescue in converge'
+E, [2016-03-15T17:41:02.778397 #2804] ERROR -- docker-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/driver/ssh_base.rb:88:in `converge'
+E, [2016-03-15T17:41:02.778421 #2804] ERROR -- docker-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:547:in `legacy_ssh_base_converge'
+E, [2016-03-15T17:41:02.778430 #2804] ERROR -- docker-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:371:in `block in converge_action'
+E, [2016-03-15T17:41:02.778439 #2804] ERROR -- docker-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:495:in `call'
+E, [2016-03-15T17:41:02.778448 #2804] ERROR -- docker-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:495:in `synchronize_or_call'
+E, [2016-03-15T17:41:02.778458 #2804] ERROR -- docker-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:460:in `block in action'
+E, [2016-03-15T17:41:02.778467 #2804] ERROR -- docker-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-03-15T17:41:02.778476 #2804] ERROR -- docker-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:459:in `action'
+E, [2016-03-15T17:41:02.778485 #2804] ERROR -- docker-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:369:in `converge_action'
+E, [2016-03-15T17:41:02.778494 #2804] ERROR -- docker-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2016-03-15T17:41:02.778504 #2804] ERROR -- docker-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:347:in `each'
+E, [2016-03-15T17:41:02.778513 #2804] ERROR -- docker-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2016-03-15T17:41:02.778532 #2804] ERROR -- docker-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:138:in `converge'
+E, [2016-03-15T17:41:02.778542 #2804] ERROR -- docker-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/command.rb:176:in `public_send'
+E, [2016-03-15T17:41:02.778551 #2804] ERROR -- docker-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2016-03-15T17:41:02.778560 #2804] ERROR -- docker-ubuntu-1404: ----------------------

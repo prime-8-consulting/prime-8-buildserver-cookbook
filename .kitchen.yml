@@ -29,7 +29,7 @@ suites:
       name: ec2
       region: us-west-2
       aws_ssh_key_id: bootstrap
-      instance_type: t2.micro 
+      instance_type: t2.medium 
       availability_zone: a
       subnet_id: <%= ENV['SUBNET_ID'] %>
       security_group_ids: [ <%= ENV['SECURITY_GROUP_ID'] %> ]
