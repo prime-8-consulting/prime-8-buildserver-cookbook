@@ -15,5 +15,5 @@ depends 'sbp_packer'
 depends 'mongodb3'
 depends 'nodejs'
 depends 'terraform'
-
+depends 'consul'
 
