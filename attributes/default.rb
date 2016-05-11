@@ -2,7 +2,7 @@ default["teamcity_server"]["version"] = "9.1.6"
 default["teamcity_server"]["build_agent"]["server"] = "localhost:8111"
 default["teamcity_server"]["build_agent"]["name"] = "cloud8" 
 default['packer']['version'] = '0.10.0'
-default['packer']['url_base'] = "https://releases.hashicorp.com/packer/#{node['packer']['version']" 
+default['packer']['url_base'] = "https://releases.hashicorp.com/packer/#{node['packer']['version']}" 
 default['packer']['raw_checksums'] = <<-EOF
 6506319ce34cea3a53bd3c1075f7dd8883ea89ebfcc13214d87d1513f2ada0c6  packer_0.10.0_darwin_386.zip
 cb1d9768306466d566abc79d83911983ace6a9a6c0a6657dc7eaab03cabd2e21  packer_0.10.0_darwin_amd64.zip
