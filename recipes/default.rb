@@ -17,11 +17,40 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-#bash 'update apt' do 
- # code 'sudo sed -i "/^# deb.*multiverse/ s/^# //" /etc/apt/sources.list && sudo apt-get update && sudo apt-get dist-upgrade'
-#end
 
 include_recipe 'sbp_packer'
 include_recipe 'terraform'
 include_recipe 'nodejs'
 include_recipe 'consul'
+include_recipe 'jenkins::master'
+
+# build out cloud8 filesystem
+directory '/var/lib/jenkins/.cloud8' do 
+  owner 'jenkins'
+  group 'jenkins'
+  mode '0755'
+end
+
+directory '/var/lib/jenkins/.cloud8/creds' do 
+  owner 'jenkins'
+  group 'jenkins'
+  mode '0755'
+end
+
+directory '/var/lib/jenkins/.cloud8/repos' do 
+  owner 'jenkins'
+  group 'jenkins'
+  mode '0755'
+end 
+
+tiers = ['ops', 'dev', 'stage', 'rc', 'prod']
+
+tiers.each do |t|
+  directory "/var/lib/jenkins/.cloud8/repos/#{t}" do 
+    owner 'jenkins'
+    group 'jenkins'
+    mode '0775'
+  end
+end
+
+
