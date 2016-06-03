@@ -24,6 +24,10 @@ include_recipe 'nodejs'
 include_recipe 'consul'
 include_recipe 'jenkins::master'
 
+jenkins_plugin 'simple-themes-plugin'
+jenkins_plugin 'git'
+jenkins_plugin 'thin-backup'
+
 # build out cloud8 filesystem
 directory '/var/lib/jenkins/.cloud8' do 
   owner 'jenkins'
