@@ -26,7 +26,8 @@ include_recipe 'jenkins::master'
 
 jenkins_plugin 'simple-themes-plugin'
 jenkins_plugin 'git'
-jenkins_plugin 'thin-backup'
+jenkins_plugin 'thinBackup'
+jenkins_plugin 'parameterized-trigger'
 
 # build out cloud8 filesystem
 directory '/var/lib/jenkins/.cloud8' do 
