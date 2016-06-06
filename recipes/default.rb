@@ -24,7 +24,7 @@ include_recipe 'nodejs'
 include_recipe 'consul'
 include_recipe 'jenkins::master'
 
-jenkins_plugin 'simple-themes-plugin'
+jenkins_plugin 'simple-theme-plugin'
 jenkins_plugin 'git'
 jenkins_plugin 'thinBackup'
 jenkins_plugin 'parameterized-trigger'
