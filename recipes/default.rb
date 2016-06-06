@@ -24,10 +24,12 @@ include_recipe 'nodejs'
 include_recipe 'consul'
 include_recipe 'jenkins::master'
 
-jenkins_plugin 'simple-theme-plugin'
-jenkins_plugin 'git'
-jenkins_plugin 'thinBackup'
-jenkins_plugin 'parameterized-trigger'
+# support for plugins with jenkins 2.0 is pending in the 
+# issues page of this cookbook on github
+# jenkins_plugin 'simple-theme-plugin'
+# jenkins_plugin 'git'
+# jenkins_plugin 'thinBackup'
+# jenkins_plugin 'parameterized-trigger'
 
 # build out cloud8 filesystem
 directory '/var/lib/jenkins/.cloud8' do 
