@@ -18,6 +18,7 @@
 # limitations under the License.
 #
 
+
 include_recipe 'sbp_packer'
 include_recipe 'terraform'
 include_recipe 'nodejs'
@@ -26,9 +27,12 @@ include_recipe 'jenkins::master'
 include_recipe 'rbenv::default'
 include_recipe 'rbenv::ruby_build'
 
+# ruby dependencies
+package ['libssl-dev', 'libreadline-dev', 'zlib1g-dev']
+
 # install a sensible ruby version with rbenv, which 
 # manages ruby envs for best control
-rbenv_ruby '2.1.2-p484'
+rbenv_ruby '2.3.1'
 
 # we're installing mongo3 with scripts because
 # the cookbook doesn't yet support ubuntu 16.04
