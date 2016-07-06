@@ -28,11 +28,12 @@ include_recipe 'rbenv::default'
 include_recipe 'rbenv::ruby_build'
 
 # ruby dependencies
-package ['libssl-dev', 'libreadline-dev', 'zlib1g-dev']
+package ['libssl-dev', 'libreadline-dev', 'zlib1g-dev', 'ruby-bundler']
 
 # install a sensible ruby version with rbenv, which 
 # manages ruby envs for best control
 rbenv_ruby '2.3.1'
+
 
 # we're installing mongo3 with scripts because
 # the cookbook doesn't yet support ubuntu 16.04
