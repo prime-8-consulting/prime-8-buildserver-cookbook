@@ -1,5 +1,5 @@
 default['packer']['version'] = '0.10.0'
-default['packer']['url_base'] = "https://releases.hashicorp.com/packer/#{node['packer']['version']}" 
+default['packer']['url_base'] = "https://releases.hashicorp.com/packer/#{node['packer']['version']}"
 default['packer']['raw_checksums'] = <<-EOF
 6506319ce34cea3a53bd3c1075f7dd8883ea89ebfcc13214d87d1513f2ada0c6  packer_0.10.0_darwin_386.zip
 cb1d9768306466d566abc79d83911983ace6a9a6c0a6657dc7eaab03cabd2e21  packer_0.10.0_darwin_amd64.zip
@@ -22,3 +22,4 @@ filename = "packer_#{node['packer']['version']}_#{node['os']}_#{node['packer']['
 default['packer']['checksum'] = node['packer']['checksums'][filename]
 # there's a goofy script workaround in packer for the bad deb package in jenkins
 default['jenkins']['master']['repository'] = "http://pkg.jenkins-ci.org/debian-stable"
+default['rbenv'][:group_users] = ['jenkins', 'ubuntu']

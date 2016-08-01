@@ -30,11 +30,6 @@ include_recipe 'rbenv::ruby_build'
 # ruby dependencies
 package ['libssl-dev', 'libreadline-dev', 'zlib1g-dev', 'ruby-bundler']
 
-# install a sensible ruby version with rbenv, which 
-# manages ruby envs for best control
-rbenv_ruby '2.3.1'
-
-
 # we're installing mongo3 with scripts because
 # the cookbook doesn't yet support ubuntu 16.04
 directory '/data' do
@@ -76,7 +71,7 @@ bash 'enable mongo in systemd' do
   code 'systemctl enable mongodb'
 end
 
-# support for plugins with jenkins 2.0 is pending in the 
+# support for plugins with jenkins 2.0 is pending in the
 # issues page of this cookbook on github
 # jenkins_plugin 'simple-theme-plugin'
 # jenkins_plugin 'git'
@@ -84,32 +79,29 @@ end
 # jenkins_plugin 'parameterized-trigger'
 
 # build out cloud8 filesystem
-directory '/var/lib/jenkins/.cloud8' do 
+directory '/var/lib/jenkins/.cloud8' do
   owner 'jenkins'
   group 'jenkins'
   mode '0755'
 end
 
-directory '/var/lib/jenkins/.cloud8/creds' do 
+directory '/var/lib/jenkins/.cloud8/creds' do
   owner 'jenkins'
   group 'jenkins'
   mode '0755'
 end
 
-directory '/var/lib/jenkins/.cloud8/repos' do 
+directory '/var/lib/jenkins/.cloud8/backups' do
   owner 'jenkins'
   group 'jenkins'
   mode '0755'
-end 
-
-tiers = ['ops', 'dev', 'stage', 'rc', 'prod']
-
-tiers.each do |t|
-  directory "/var/lib/jenkins/.cloud8/repos/#{t}" do 
-    owner 'jenkins'
-    group 'jenkins'
-    mode '0775'
-  end
 end
 
 
+# install a sensible ruby version with rbenv, which
+# manages ruby envs for best control
+
+rbenv_ruby '2.3.1'
+rbenv_gem 'bundler' do
+  ruby_version '2.3.1'
+end
