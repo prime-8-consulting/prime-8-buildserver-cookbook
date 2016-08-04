@@ -1,3 +1,35 @@
-I, [2016-07-06T15:12:43.617474 #53674]  INFO -- Kitchen: -----> Starting Kitchen (v1.5.0)
-I, [2016-07-06T15:12:44.024125 #53674]  INFO -- Kitchen: -----> Converging <default-ubuntu-1604>...
-I, [2016-07-06T15:14:27.645339 #53674]  INFO -- Kitchen: -----> Kitchen is finished. (1m44.03s)
+I, [2016-08-04T11:15:19.743132 #15660]  INFO -- Kitchen: -----> Starting Kitchen (v1.5.0)
+I, [2016-08-04T11:15:20.402338 #15660]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1604>...
+I, [2016-08-04T11:15:28.630473 #15660]  INFO -- Kitchen: -----> Destroying <ec2-ubuntu-1604>...
+E, [2016-08-04T11:15:29.769688 #15660] ERROR -- Kitchen: ------Exception-------
+E, [2016-08-04T11:15:29.769718 #15660] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2016-08-04T11:15:29.769732 #15660] ERROR -- Kitchen: Message: Failed to complete #destroy action: [The instance ID 'i-8c60824a' does not exist]
+E, [2016-08-04T11:15:29.769759 #15660] ERROR -- Kitchen: ---Nested Exception---
+E, [2016-08-04T11:15:29.769786 #15660] ERROR -- Kitchen: Class: Aws::EC2::Errors::InvalidInstanceIDNotFound
+E, [2016-08-04T11:15:29.769796 #15660] ERROR -- Kitchen: Message: The instance ID 'i-8c60824a' does not exist
+E, [2016-08-04T11:15:29.769805 #15660] ERROR -- Kitchen: ------Backtrace-------
+E, [2016-08-04T11:15:29.769815 #15660] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/aws-sdk-core-2.2.13/lib/seahorse/client/plugins/raise_response_errors.rb:15:in `call'
+E, [2016-08-04T11:15:29.769825 #15660] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/aws-sdk-core-2.2.13/lib/aws-sdk-core/plugins/param_converter.rb:20:in `call'
+E, [2016-08-04T11:15:29.769834 #15660] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/aws-sdk-core-2.2.13/lib/seahorse/client/plugins/response_target.rb:21:in `call'
+E, [2016-08-04T11:15:29.769844 #15660] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/aws-sdk-core-2.2.13/lib/seahorse/client/request.rb:70:in `send_request'
+E, [2016-08-04T11:15:29.769885 #15660] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/aws-sdk-core-2.2.13/lib/seahorse/client/base.rb:207:in `block (2 levels) in define_operation_methods'
+E, [2016-08-04T11:15:29.769896 #15660] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/aws-sdk-resources-2.2.13/lib/aws-sdk-resources/request.rb:24:in `call'
+E, [2016-08-04T11:15:29.769907 #15660] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/aws-sdk-resources-2.2.13/lib/aws-sdk-resources/operations.rb:41:in `call'
+E, [2016-08-04T11:15:29.769917 #15660] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/aws-sdk-resources-2.2.13/lib/aws-sdk-resources/operation_methods.rb:19:in `block in add_operation'
+E, [2016-08-04T11:15:29.769927 #15660] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.10.0/lib/kitchen/driver/ec2.rb:225:in `destroy'
+E, [2016-08-04T11:15:29.769937 #15660] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:431:in `public_send'
+E, [2016-08-04T11:15:29.769947 #15660] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:431:in `block in perform_action'
+E, [2016-08-04T11:15:29.769957 #15660] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:495:in `call'
+E, [2016-08-04T11:15:29.769966 #15660] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:495:in `synchronize_or_call'
+E, [2016-08-04T11:15:29.769976 #15660] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:460:in `block in action'
+E, [2016-08-04T11:15:29.769986 #15660] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-08-04T11:15:29.769996 #15660] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:459:in `action'
+E, [2016-08-04T11:15:29.770005 #15660] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:431:in `perform_action'
+E, [2016-08-04T11:15:29.770015 #15660] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:418:in `destroy_action'
+E, [2016-08-04T11:15:29.770029 #15660] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2016-08-04T11:15:29.770040 #15660] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:347:in `each'
+E, [2016-08-04T11:15:29.770049 #15660] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2016-08-04T11:15:29.770058 #15660] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:171:in `destroy'
+E, [2016-08-04T11:15:29.770068 #15660] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/command.rb:176:in `public_send'
+E, [2016-08-04T11:15:29.770077 #15660] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2016-08-04T11:15:29.770087 #15660] ERROR -- Kitchen: ----------------------

@@ -22,4 +22,4 @@ filename = "packer_#{node['packer']['version']}_#{node['os']}_#{node['packer']['
 default['packer']['checksum'] = node['packer']['checksums'][filename]
 # there's a goofy script workaround in packer for the bad deb package in jenkins
 default['jenkins']['master']['repository'] = "http://pkg.jenkins-ci.org/debian-stable"
-default['rbenv'][:group_users] = ['jenkins', 'ubuntu']
+

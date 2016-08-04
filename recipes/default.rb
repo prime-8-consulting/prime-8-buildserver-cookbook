@@ -24,11 +24,9 @@ include_recipe 'terraform'
 include_recipe 'nodejs'
 include_recipe 'consul'
 include_recipe 'jenkins::master'
-include_recipe 'rbenv::default'
-include_recipe 'rbenv::ruby_build'
 
 # ruby dependencies
-package ['libssl-dev', 'libreadline-dev', 'zlib1g-dev', 'ruby-bundler']
+package ['libssl-dev', 'libreadline-dev', 'zlib1g-dev']
 
 # we're installing mongo3 with scripts because
 # the cookbook doesn't yet support ubuntu 16.04
@@ -100,8 +98,17 @@ end
 
 # install a sensible ruby version with rbenv, which
 # manages ruby envs for best control
-
-rbenv_ruby '2.3.1'
-rbenv_gem 'bundler' do
-  ruby_version '2.3.1'
+bash 'install ruby for jenkins' do
+  user 'jenkins'
+  code <<-EOH
+    git clone https://github.com/rbenv/rbenv.git /var/lib/jenkins/.rbenv
+    git clone https://github.com/rbenv/ruby-build.git /var/lib/jenkins/.rbenv/plugins/ruby-build
+    echo 'export PATH="/var/lib/jenkins/.rbenv/bin:/var/lib/jenkins/.rbenv/shims:$PATH"' >> /var/lib/jenkins/.bashrc
+    source /var/lib/jenkins/.bashrc
+    rbenv init
+    rbenv install 2.3.1
+    rbenv global 2.3.1
+    gem install bundler
+    EOH
+  not_if { ::Dir.exists?("/var/lib/jenkins/.rbenv") }
 end
