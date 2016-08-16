@@ -102,10 +102,10 @@ bash 'install ruby for jenkins' do
   user 'jenkins'
   code <<-EOH
     git clone https://github.com/rbenv/rbenv.git /var/lib/jenkins/.rbenv
+    rbenv init
     git clone https://github.com/rbenv/ruby-build.git /var/lib/jenkins/.rbenv/plugins/ruby-build
     echo 'export PATH="/var/lib/jenkins/.rbenv/bin:/var/lib/jenkins/.rbenv/shims:$PATH"' >> /var/lib/jenkins/.bashrc
     source /var/lib/jenkins/.bashrc
-    rbenv init
     rbenv install 2.3.1
     rbenv global 2.3.1
     gem install bundler
