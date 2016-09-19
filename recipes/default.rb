@@ -24,6 +24,8 @@ include_recipe 'terraform'
 include_recipe 'nodejs'
 include_recipe 'consul'
 include_recipe 'jenkins::master'
+include_recipe 'apt::cacher-ng'
+include_recipe 'apt::cacher-client'
 
 # ruby dependencies
 package ['libssl-dev', 'libreadline-dev', 'zlib1g-dev']
