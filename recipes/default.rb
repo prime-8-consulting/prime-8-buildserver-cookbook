@@ -24,52 +24,12 @@ include_recipe 'terraform'
 include_recipe 'nodejs'
 include_recipe 'consul'
 include_recipe 'jenkins::master'
+include_recipe 'mongodb3'
 include_recipe 'apt::cacher-ng'
 include_recipe 'apt::cacher-client'
 
 # ruby dependencies
 package ['libssl-dev', 'libreadline-dev', 'zlib1g-dev']
-
-# we're installing mongo3 with scripts because
-# the cookbook doesn't yet support ubuntu 16.04
-directory '/data' do
-  owner 'root'
-  group 'root'
-  mode '0755'
-end
-
-directory '/data/db' do
-  owner 'root'
-  group 'root'
-  mode '0755'
-end
-
-cookbook_file '/home/ubuntu/mongo3install.sh' do
-  source 'mongo3install.sh'
-  owner 'root'
-  group 'root'
-  mode '755'
-end
-
-# systemd is ubuntu's new init system, and the cause
-# of our grief with the cookbooks. We'll drop our own config
-cookbook_file '/etc/systemd/system/mongodb.service' do
-  source 'mongodb.service'
-  owner 'root'
-  group 'root'
-  mode '755'
-end
-
-bash 'install mongodb3' do
-  cwd '/home/ubuntu'
-  code 'bash mongo3install.sh'
-end
-
-bash 'enable mongo in systemd' do
-  user 'root'
-  group 'root'
-  code 'systemctl enable mongodb'
-end
 
 # support for plugins with jenkins 2.0 is pending in the
 # issues page of this cookbook on github
