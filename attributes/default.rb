@@ -1,6 +1,6 @@
 default['packer']['version'] = '0.10.1'
 default['packer']['url_base'] = "https://releases.hashicorp.com/packer/#{node['packer']['version']}"
-default['packer']['raw_checksums'] = <<-EOF
+default['packer']['raw_checksums']['version'] = <<-EOF
 7974c24313230dfe6a13a81332c3a2f5119d4c589ca3b7ead6decf4895486c71  packer_0.10.1_darwin_386.zip
 fac621bf1fb43f0cbbe52481c8dfda2948895ad52e022e46f00bc75c07a4f181  packer_0.10.1_darwin_amd64.zip
 951012ddd2564cfe1cf901b8486a36896f89d4c4e75b3ed85d6f9b49c06ac14e  packer_0.10.1_freebsd_386.zip
@@ -16,9 +16,10 @@ b5a25296056ac6511a370e7357b3723de313bfc8ffcb8bd850d6ba8d77b8493e  packer_0.10.1_
 EOF
 
 node.default['packer']['checksums'] = Hash[
-    node['packer']['raw_checksums'].split("\n").collect { |s| s.split.reverse }
+    node['packer']['raw_checksums']['version'].split("\n").collect { |s| s.split.reverse }
 ]
 filename = "packer_#{node['packer']['version']}_#{node['os']}_#{node['packer']['arch']}.zip"
 default['packer']['checksum'] = node['packer']['checksums'][filename]
+default['packer']['zipfile'] = filename 
 # there's a goofy script workaround in packer for the bad deb package in jenkins
 default['jenkins']['master']['repository'] = "http://pkg.jenkins-ci.org/debian-stable"
