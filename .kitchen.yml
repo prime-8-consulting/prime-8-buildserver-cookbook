@@ -9,7 +9,7 @@ provisioner:
 
 platforms:
   - name: ubuntu-16.04
- 
+
 suites:
   - name: default
     run_list:
@@ -17,19 +17,19 @@ suites:
     attributes:
 
   - name: ec2
-    run_list: 
+    run_list:
       - recipe[prime-8-buildserver::default]
     driver:
       name: ec2
       region: us-west-2
       aws_ssh_key_id: bootstrap
-      instance_type: t2.medium 
+      instance_type: t2.medium
       availability_zone: a
       subnet_id: <%= ENV['SUBNET_ID'] %>
       security_group_ids: [ <%= ENV['SECURITY_GROUP_ID'] %> ]
-      image_id: <%= ENV['AMI_ID'] %>
-      tags: 
+      image_id: <%= ENV['PRIME8_BASE_AMI_OPS'] %>
+      tags:
         Name: kitchen-prime-8-buildserver
     transport:
-      ssh_key: <%= ENV['SSH_PRIVATE_KEY_FILE'] %> 
+      ssh_key: <%= ENV['SSH_PRIVATE_KEY_FILE'] %>
       username: ubuntu

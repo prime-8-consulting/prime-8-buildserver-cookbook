@@ -1,7 +1,0 @@
----
-ssh_key: "/home/prime8/git/prime-8-cloud/ops/prime-8-buildserver-cookbook/.kitchen/docker_id_rsa"
-image_id: 16dda4624c21
-container_id: 35c67a8b0160fd4cb469a6e3cca62a82382063803372efb9b5aaf1cdc82e0364
-hostname: localhost
-port: 32768
-last_action: create
