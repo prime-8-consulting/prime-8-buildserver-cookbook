@@ -1,3 +1,0 @@
-I, [2016-09-21T16:16:06.840106 #23318]  INFO -- Kitchen: -----> Starting Kitchen (v1.13.0)
-I, [2016-09-21T16:16:09.129854 #23318]  INFO -- Kitchen: -----> Converging <ec2-ubuntu-1604>...
-I, [2016-09-21T16:21:11.889378 #23318]  INFO -- Kitchen: -----> Kitchen is finished. (5m5.05s)
