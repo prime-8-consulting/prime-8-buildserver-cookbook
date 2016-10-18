@@ -31,13 +31,6 @@ include_recipe 'apt::cacher-client'
 # ruby dependencies
 package ['libssl-dev', 'libreadline-dev', 'zlib1g-dev']
 
-# support for plugins with jenkins 2.0 is pending in the
-# issues page of this cookbook on github
-# jenkins_plugin 'simple-theme-plugin'
-# jenkins_plugin 'git'
-# jenkins_plugin 'thinBackup'
-# jenkins_plugin 'parameterized-trigger'
-
 # build out cloud8 filesystem
 directory '/var/lib/jenkins/.cloud8' do
   owner 'jenkins'
@@ -66,6 +59,7 @@ bash 'install ruby for jenkins' do
     git clone https://github.com/rbenv/rbenv.git /var/lib/jenkins/.rbenv && rbenv init
     git clone https://github.com/rbenv/ruby-build.git /var/lib/jenkins/.rbenv/plugins/ruby-build
     echo 'export PATH="/var/lib/jenkins/.rbenv/bin:/var/lib/jenkins/.rbenv/shims:$PATH"' >> /var/lib/jenkins/.bashrc
+    echo 'eval "$(rbenv init -)"' >> /var/lib/jenkins/.bashrc
     source /var/lib/jenkins/.bashrc
     rbenv install 2.3.1
     rbenv global 2.3.1
