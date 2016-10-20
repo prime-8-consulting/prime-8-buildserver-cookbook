@@ -53,17 +53,17 @@ end
 
 # install a sensible ruby version with rbenv, which
 # manages ruby envs for best control
-bash 'install ruby for jenkins' do
-  user 'jenkins'
-  code <<-EOH
-    git clone https://github.com/rbenv/rbenv.git /var/lib/jenkins/.rbenv && rbenv init
-    git clone https://github.com/rbenv/ruby-build.git /var/lib/jenkins/.rbenv/plugins/ruby-build
-    echo 'export PATH="/var/lib/jenkins/.rbenv/bin:/var/lib/jenkins/.rbenv/shims:$PATH"' >> /var/lib/jenkins/.bashrc
-    echo 'eval "$(rbenv init -)"' >> /var/lib/jenkins/.bashrc
-    source /var/lib/jenkins/.bashrc
-    rbenv install 2.3.1
-    rbenv global 2.3.1
-    gem install bundler
-    EOH
-  not_if { ::Dir.exists?("/var/lib/jenkins/.rbenv") }
-end
+# bash 'install ruby for jenkins' do
+#   user 'jenkins'
+#   code <<-EOH
+#     git clone https://github.com/rbenv/rbenv.git /var/lib/jenkins/.rbenv && rbenv init
+#     git clone https://github.com/rbenv/ruby-build.git /var/lib/jenkins/.rbenv/plugins/ruby-build
+#     echo 'export PATH="/var/lib/jenkins/.rbenv/bin:/var/lib/jenkins/.rbenv/shims:$PATH"' >> /var/lib/jenkins/.bashrc
+#     echo 'eval "$(rbenv init -)"' >> /var/lib/jenkins/.bashrc
+#     source /var/lib/jenkins/.bashrc
+#     rbenv install 2.3.1
+#     rbenv global 2.3.1
+#     gem install bundler
+#     EOH
+#   not_if { ::Dir.exists?("/var/lib/jenkins/.rbenv") }
+# end
