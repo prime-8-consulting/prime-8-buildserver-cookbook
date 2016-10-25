@@ -28,7 +28,7 @@ include_recipe 'mongodb3'
 include_recipe 'apt::cacher-ng'
 include_recipe 'apt::cacher-client'
 include_recipe 'ruby_build'
-include_recipe 'ruby_rbenv::user'
+include_recipe 'ruby_rbenv::system'
 
 # ruby dependencies
 package ['libssl-dev', 'libreadline-dev', 'zlib1g-dev']
