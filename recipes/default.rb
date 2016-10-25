@@ -27,7 +27,7 @@ include_recipe 'jenkins::master'
 include_recipe 'mongodb3'
 include_recipe 'apt::cacher-ng'
 include_recipe 'apt::cacher-client'
-include_recipe 'ruby_rbenv::ruby_build'
+include_recipe 'ruby_build'
 include_recipe 'ruby_rbenv::user'
 
 # ruby dependencies
