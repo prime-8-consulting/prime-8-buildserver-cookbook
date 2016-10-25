@@ -20,6 +20,13 @@ node.default['packer']['checksums'] = Hash[
 ]
 filename = "packer_#{node['packer']['version']}_#{node['os']}_#{node['packer']['arch']}.zip"
 default['packer']['checksum'] = node['packer']['checksums'][filename]
-default['packer']['zipfile'] = filename 
+default['packer']['zipfile'] = filename
 # there's a goofy script workaround in packer for the bad deb package in jenkins
 default['jenkins']['master']['repository'] = "http://pkg.jenkins-ci.org/debian-stable"
+default['ruby_rbenv']['user_installs'] = [
+  { 'user' => 'jenkins',
+    'rubies' => ['2.3.1'],
+    'global' => '2.3.1',
+    gems => {}
+  }
+]
