@@ -27,6 +27,6 @@ default['ruby_rbenv']['user_installs'] = [
   { 'user' => 'jenkins',
     'rubies' => ['2.3.1'],
     'global' => '2.3.1',
-    gems => {}
+    'gems' => {}
   }
 ]
