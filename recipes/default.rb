@@ -28,7 +28,7 @@ include_recipe 'mongodb3'
 include_recipe 'apt::cacher-ng'
 include_recipe 'apt::cacher-client'
 include_recipe 'ruby_build'
-include_recipe 'ruby_rbenv::system'
+include_recipe 'ruby_rbenv::user_installs'
 
 # ruby dependencies
 package ['libssl-dev', 'libreadline-dev', 'zlib1g-dev']
@@ -51,28 +51,28 @@ directory '/var/lib/jenkins/.cloud8/backups' do
   group 'jenkins'
   mode '0755'
 end
-
-rbenv_ruby "2.3.1"
-rbenv_global "2.3.1"
-
-gems = [
-  'thor',
-  'highline',
-  'rainbow',
-  'aws-sdk',
-  'inifile',
-  'chef-berks',
-  'ruby-graphviz',
-  'mongo'
-]
-
-gems.each do |g|
-  rbenv_gem g
-end
-
-file '/var/lib/jenkins/.bashrc' do
-  content "export PATH=/usr/local/rbenv/bin:$PATH"
-  owner 'jenkins'
-  group 'jenkins'
-  mode '755'
-end
+# 
+# rbenv_ruby "2.3.1"
+# rbenv_global "2.3.1"
+#
+# gems = [
+#   'thor',
+#   'highline',
+#   'rainbow',
+#   'aws-sdk',
+#   'inifile',
+#   'chef-berks',
+#   'ruby-graphviz',
+#   'mongo'
+# ]
+#
+# gems.each do |g|
+#   rbenv_gem g
+# end
+#
+# file '/var/lib/jenkins/.bashrc' do
+#   content "export PATH=/usr/local/rbenv/bin:$PATH"
+#   owner 'jenkins'
+#   group 'jenkins'
+#   mode '755'
+# end

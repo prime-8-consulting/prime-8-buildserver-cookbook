@@ -23,3 +23,12 @@ default['packer']['checksum'] = node['packer']['checksums'][filename]
 default['packer']['zipfile'] = filename
 # there's a goofy script workaround in packer for the bad deb package in jenkins
 default['jenkins']['master']['repository'] = "http://pkg.jenkins-ci.org/debian-stable"
+# ugly workaround for jenkins user path
+default['rbenv']['user_home_root'] = '/var/lib'
+default['rbenv']['user_installs'] = [
+  { 'user'    => 'jenkins',
+    'rubies'  => ['2.3.1'],
+    'global'  => '2.3.1',
+    'gems'    => {}
+  }
+]
