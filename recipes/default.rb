@@ -71,7 +71,7 @@ gems.each do |g|
 end
 
 file '/var/lib/jenkins/.bashrc' do
-  content "export PATH=/usr/local/rbenv/bin:$PATH"
+  content "export PATH=/usr/local/rbenv/bin:/usr/local/rbenv/versions/2.3.1/bin:$PATH"
   owner 'jenkins'
   group 'jenkins'
   mode '755'
