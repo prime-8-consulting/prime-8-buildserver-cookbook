@@ -52,6 +52,10 @@ directory '/var/lib/jenkins/.cloud8/backups' do
   mode '0755'
 end
 
+rbenv_ruby "2.3.1"
+
+rbenv_global "2.3.1"
+
 file '/var/lib/jenkins/.bashrc' do
   content "export PATH=/usr/local/rbenv/bin:$PATH"
   owner 'jenkins'
