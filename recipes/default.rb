@@ -52,10 +52,15 @@ directory '/var/lib/jenkins/.cloud8/backups' do
   mode '0755'
 end
 
+# the rbenv cookbook was failing a user install for jenkins
+# since jenkins was not at /home/jenkins TODO figure out how
+# to set the user_installs home dir attribute for a more responsible
+# install process, this is working all by path
 rbenv_ruby "2.3.1"
 rbenv_global "2.3.1"
 
 gems = [
+  'bundler',
   'thor',
   'highline',
   'rainbow',
