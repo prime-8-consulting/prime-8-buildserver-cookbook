@@ -52,9 +52,29 @@ directory '/var/lib/jenkins/.cloud8/backups' do
   mode '0755'
 end
 
-rbenv_ruby "2.3.1"
+rbenv_ruby "2.3.1" do
+  user 'jenkins'
+end
+rbenv_global "2.3.1" do
+  user 'jenkins'
+end
 
-rbenv_global "2.3.1"
+gems = [
+  'thor',
+  'highline',
+  'rainbow',
+  'aws-sdk',
+  'inifile',
+  'chef-berks',
+  'ruby-graphviz',
+  'mongo'
+]
+
+gems.each do |g|
+  rbenv_gem g do
+    user 'jenkins'
+  end
+end
 
 file '/var/lib/jenkins/.bashrc' do
   content "export PATH=/usr/local/rbenv/bin:$PATH"
