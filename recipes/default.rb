@@ -52,26 +52,9 @@ directory '/var/lib/jenkins/.cloud8/backups' do
   mode '0755'
 end
 
-
-# install a sensible ruby version with rbenv, which
-# manages ruby envs for best control
-# bash 'install ruby for jenkins' do
-#   user 'jenkins'
-#   code <<-EOH
-#     git clone https://github.com/rbenv/rbenv.git /var/lib/jenkins/.rbenv
-#     echo 'export PATH="/var/lib/jenkins/.rbenv/bin:/var/lib/jenkins/.rbenv/shims:$PATH"' >> /var/lib/jenkins/.bashrc
-#     echo 'eval "$(rbenv init -)"' >> /var/lib/jenkins/.bashrc
-#     source /var/lib/jenkins/.bashrc
-#     git clone https://github.com/rbenv/ruby-build.git /var/lib/jenkins/.rbenv/plugins/ruby-build
-#     rbenv install 2.3.1
-#     rbenv global 2.3.1
-#     gem install bundler
-#     EOH
-#   not_if { ::Dir.exists?("/var/lib/jenkins/.rbenv") }
-# end
-
-# set the global ruby, must source bashrc each time
-
-# use bundler to install all the gems
-
-# make known_hosts and add github
+file '/var/lib/jenkins/.bashrc' do
+  content "export PATH=/usr/local/rbenv/bin:$PATH"
+  owner 'jenkins'
+  group 'jenkins'
+  mode '755'
+end
