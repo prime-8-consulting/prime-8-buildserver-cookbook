@@ -81,3 +81,5 @@ file '/var/lib/jenkins/.bashrc' do
   group 'jenkins'
   mode '755'
 end
+
+jenkins_plugin 'thinBackup'
