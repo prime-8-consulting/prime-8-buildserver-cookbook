@@ -52,12 +52,8 @@ directory '/var/lib/jenkins/.cloud8/backups' do
   mode '0755'
 end
 
-rbenv_ruby "2.3.1" do
-  user 'jenkins'
-end
-rbenv_global "2.3.1" do
-  user 'jenkins'
-end
+rbenv_ruby "2.3.1"
+rbenv_global "2.3.1"
 
 gems = [
   'thor',
@@ -71,9 +67,7 @@ gems = [
 ]
 
 gems.each do |g|
-  rbenv_gem g do
-    user 'jenkins'
-  end
+  rbenv_gem g
 end
 
 file '/var/lib/jenkins/.bashrc' do
