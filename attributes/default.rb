@@ -23,3 +23,7 @@ default['packer']['checksum'] = node['packer']['checksums'][filename]
 default['packer']['zipfile'] = filename
 # there's a goofy script workaround in packer for the bad deb package in jenkins
 default['jenkins']['master']['repository'] = "http://pkg.jenkins-ci.org/debian-stable"
+# using daften's branch we can do an automated setup of jenkins 2.0
+# but first we have to disable the setup wizard. This isn't terribly dangerous
+# since our buildserver is completely private
+default['jenkins']['master']['jvm_options'] = '-Djenkins.install.runSetupWizard=false'
