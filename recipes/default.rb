@@ -18,7 +18,6 @@
 # limitations under the License.
 #
 
-
 include_recipe 'sbp_packer'
 include_recipe 'terraform'
 include_recipe 'nodejs'
@@ -33,23 +32,22 @@ include_recipe 'ruby_rbenv::system'
 # ruby dependencies
 package ['libssl-dev', 'libreadline-dev', 'zlib1g-dev']
 
-# build out cloud8 filesystem
-directory '/var/lib/jenkins/.cloud8' do
-  owner 'jenkins'
-  group 'jenkins'
-  mode '0755'
-end
+# build out the filesystem for storing our own
+# data on the buildserver. There's repermissioning after
+# write on some of the dirs.
+cloud8_dirs = [
+  '/var/lib/jenkins/.cloud8',
+  '/var/lib/jenkins/.cloud8/creds',
+  '/var/lib/jenkins/.cloud8/backups',
+  '/var/lib/jenkins/.cloud8/terraform-tmp'
+]
 
-directory '/var/lib/jenkins/.cloud8/creds' do
-  owner 'jenkins'
-  group 'jenkins'
-  mode '0755'
-end
-
-directory '/var/lib/jenkins/.cloud8/backups' do
-  owner 'jenkins'
-  group 'jenkins'
-  mode '0755'
+cloud8_dirs.each do |d|
+  directory d do
+    owner 'jenkins'
+    group 'jenkins'
+    mode '0755'
+  end
 end
 
 # the rbenv cookbook was failing a user install for jenkins
