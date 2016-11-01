@@ -21,33 +21,14 @@
 include_recipe 'sbp_packer'
 include_recipe 'terraform'
 include_recipe 'nodejs'
-include_recipe 'jenkins::master'
 include_recipe 'mongodb3'
-include_recipe 'apt::cacher-ng'
-include_recipe 'apt::cacher-client'
 include_recipe 'ruby_build'
 include_recipe 'ruby_rbenv::system'
 
 # ruby dependencies
 package ['libssl-dev', 'libreadline-dev', 'zlib1g-dev']
 
-# build out the filesystem for storing our own
-# data on the buildserver. There's repermissioning after
-# write on some of the dirs.
-cloud8_dirs = [
-  '/var/lib/jenkins/.cloud8',
-  '/var/lib/jenkins/.cloud8/creds',
-  '/var/lib/jenkins/.cloud8/backups',
-  '/var/lib/jenkins/.cloud8/terraform-tmp'
-]
 
-cloud8_dirs.each do |d|
-  directory d do
-    owner 'jenkins'
-    group 'jenkins'
-    mode '0755'
-  end
-end
 
 # the rbenv cookbook was failing a user install for jenkins
 # since jenkins was not at /home/jenkins TODO figure out how
@@ -71,12 +52,3 @@ gems = [
 gems.each do |g|
   rbenv_gem g
 end
-
-file '/var/lib/jenkins/.bashrc' do
-  content "export PATH=/usr/local/rbenv/bin:/usr/local/rbenv/versions/2.3.1/bin:$PATH"
-  owner 'jenkins'
-  group 'jenkins'
-  mode '755'
-end
-
-jenkins_plugin 'thinBackup'
