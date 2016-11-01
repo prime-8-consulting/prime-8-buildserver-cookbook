@@ -28,8 +28,6 @@ include_recipe 'ruby_rbenv::system'
 # ruby dependencies
 package ['libssl-dev', 'libreadline-dev', 'zlib1g-dev']
 
-
-
 # the rbenv cookbook was failing a user install for jenkins
 # since jenkins was not at /home/jenkins TODO figure out how
 # to set the user_installs home dir attribute for a more responsible
