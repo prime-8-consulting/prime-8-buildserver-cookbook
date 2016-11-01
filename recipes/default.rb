@@ -21,7 +21,6 @@
 include_recipe 'sbp_packer'
 include_recipe 'terraform'
 include_recipe 'nodejs'
-include_recipe 'consul'
 include_recipe 'jenkins::master'
 include_recipe 'mongodb3'
 include_recipe 'apt::cacher-ng'
