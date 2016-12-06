@@ -1,18 +1,19 @@
-default['packer']['version'] = '0.10.1'
+default['packer']['version'] = '0.12.0'
 default['packer']['url_base'] = "https://releases.hashicorp.com/packer/#{node['packer']['version']}"
 default['packer']['raw_checksums']['version'] = <<-EOF
-7974c24313230dfe6a13a81332c3a2f5119d4c589ca3b7ead6decf4895486c71  packer_0.10.1_darwin_386.zip
-fac621bf1fb43f0cbbe52481c8dfda2948895ad52e022e46f00bc75c07a4f181  packer_0.10.1_darwin_amd64.zip
-951012ddd2564cfe1cf901b8486a36896f89d4c4e75b3ed85d6f9b49c06ac14e  packer_0.10.1_freebsd_386.zip
-170459ee7a1b2360f49a07ecffbadffe5407826f9514af10a25c3f19e1721e43  packer_0.10.1_freebsd_amd64.zip
-3360dad292c16d2893f6138edd33d6f8eba00f1985330ad797f80670b3032e2e  packer_0.10.1_freebsd_arm.zip
-9146b94115684a9725b2c1b5e5fbc412f30caaca136dbad4028423d6d6d3b6e4  packer_0.10.1_linux_386.zip
-7d51fc5db19d02bbf32278a8116830fae33a3f9bd4440a58d23ad7c863e92e28  packer_0.10.1_linux_amd64.zip
-1e110fb8ade48f959e426cf07603240fdc050d19ee8097e824459bf5e0638461  packer_0.10.1_linux_arm.zip
-b5a25296056ac6511a370e7357b3723de313bfc8ffcb8bd850d6ba8d77b8493e  packer_0.10.1_openbsd_386.zip
-255251a5dd93bba3c286b22b95ee9df63a1270c5c57c355263d0bebf692513da  packer_0.10.1_openbsd_amd64.zip
-9c3c3483a8b6dd6d116747bfcccbf6f530ffab9bb46b47d9a49bdcb92c145914  packer_0.10.1_windows_386.zip
-623013056dc662f29817dce6bd31e6fb669883a35ea9311951bbcea4eb9c59f7  packer_0.10.1_windows_amd64.zip
+9fe5561a2be482989dd518d7e9616c2dcfe5111e749489ceadde5bbdf9e6b1b8  packer_0.12.0_darwin_386.zip
+e3f25ad619f35e10a4195c971d78f29abceb16877bbf2bd75182140373d02bd3  packer_0.12.0_darwin_amd64.zip
+f5cf377c17c2513622034d2e602d820f5fed31d807edf2c424f4891612579d0c  packer_0.12.0_darwin_arm.zip
+58bd298378fe811f2fdb0eb71f8d509dc58f997da32c135a04574133b05ee009  packer_0.12.0_freebsd_386.zip
+6b8a587e7f2a4a0dd26a7d523e474b0b30259b9683f2677cecec837eeab5ff0b  packer_0.12.0_freebsd_amd64.zip
+5a2a90741725993751ca5da9dbf29898f2196d005852dc1da72985d3c48be77f  packer_0.12.0_freebsd_arm.zip
+1b63006e1799f530755910d48b0858d80f3e6300b245511f1bc8a082108b92b3  packer_0.12.0_linux_386.zip
+ce6362d527ba697e40b8c90a98d2034b7749e2357fa238b08536aed44f037073  packer_0.12.0_linux_amd64.zip
+cd6482ad0b3c80d386989e73a7927248558fb627b53bbfd2f490d7a473a81d17  packer_0.12.0_linux_arm.zip
+99fb287ce60ddd27bcdda11c87cceab3fcfc6921290bb2ee279bf3646df2f23f  packer_0.12.0_openbsd_386.zip
+8a48bb7865b22a219c6d0085e20d170cb0f852580732bf45016da43be4fd8131  packer_0.12.0_openbsd_amd64.zip
+1b346c6f381e21e92a589dfcc0eafc7c2b87f10cdfc524e3c7128dd0a64a9763  packer_0.12.0_windows_386.zip
+4d1f9733b3cafc9e0ab2b1e9957dc2621a57f209a78d51ac5f5312cbcbb4e300  packer_0.12.0_windows_amd64.zip
 EOF
 
 node.default['packer']['checksums'] = Hash[

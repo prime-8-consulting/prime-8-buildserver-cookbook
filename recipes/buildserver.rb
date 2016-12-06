@@ -33,3 +33,7 @@ file '/var/lib/jenkins/.bashrc' do
 end
 
 jenkins_plugin 'thinBackup'
+docker_installation_package 'default' do
+  action :create
+  package_options %q|--force-yes -o Dpkg::Options::='--force-confold' -o Dpkg::Options::='--force-all'|
+end
