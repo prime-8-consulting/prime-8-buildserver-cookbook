@@ -23,6 +23,7 @@ include_recipe 'terraform'
 include_recipe 'nodejs'
 include_recipe 'ruby_build'
 include_recipe 'ruby_rbenv::system'
+include_recipe 'jenkins::master'
 
 # ruby dependencies
 package ['libssl-dev', 'libreadline-dev', 'zlib1g-dev']
@@ -43,9 +44,40 @@ gems = [
   'inifile',
   'chef-berks',
   'ruby-graphviz',
-  'mongo'
 ]
 
 gems.each do |g|
   rbenv_gem g
+end
+
+# build out the filesystem for storing our own
+# data on the buildserver. There's repermissioning after
+# write on some of the dirs.
+cloud8_dirs = [
+  '/var/lib/jenkins/.cloud8',
+  '/var/lib/jenkins/.cloud8/creds',
+  '/var/lib/jenkins/.cloud8/backups',
+  '/var/lib/jenkins/.cloud8/terraform-tmp'
+]
+
+cloud8_dirs.each do |d|
+  directory d do
+    owner 'jenkins'
+    group 'jenkins'
+    mode '0755'
+  end
+end
+
+
+file '/var/lib/jenkins/.bashrc' do
+  content "export PATH=/usr/local/rbenv/bin:/usr/local/rbenv/versions/2.3.1/bin:$PATH"
+  owner 'jenkins'
+  group 'jenkins'
+  mode '755'
+end
+
+jenkins_plugin 'thinBackup'
+docker_installation_package 'default' do
+  action :create
+  package_options %q|--force-yes -o Dpkg::Options::='--force-confold' -o Dpkg::Options::='--force-all'|
 end
