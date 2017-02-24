@@ -21,7 +21,6 @@
 include_recipe 'sbp_packer'
 include_recipe 'terraform'
 include_recipe 'nodejs'
-include_recipe 'mongodb3'
 include_recipe 'ruby_build'
 include_recipe 'ruby_rbenv::system'
 
