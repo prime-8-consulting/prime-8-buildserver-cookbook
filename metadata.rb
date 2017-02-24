@@ -7,7 +7,10 @@ maintainer_email 'ellenm@prime8consulting.com'
 license          'apache2'
 description      'Installs/Configures prime-8-buildserver'
 long_description 'Installs/Configures prime-8-buildserver'
-version          '0.0.3'
+version          '0.1.0'
+
+supports 'rhel', '= 7.3'
+supports 'ubuntu', '= 16.04'
 
 depends 'jenkins'
 depends 'sbp_packer'
